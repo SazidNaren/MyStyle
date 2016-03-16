@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PhotoBooth</string>
+    <string name="app_setting">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Logout Facebook</string>
+    <string name="camera_button">Camera</string>
+    <string name="how_to_share">How do you want to share?</string>
+    <string name="library_button">Library</string>
+    <string name="loading">loading...</string>
+    <string name="app_id">924960117518870</string>
+    <string name="add_id">ca-app-pub-1539847908526641/2467529214</string>
+
+    <string-array name="listItems">
+        <item>    LogOut</item>
+        <item>        Upgrade</item>
+        <item>        Share</item>
+        <item>        Share via Mail</item>
+        <item>        Rate Us</item>
+        <item>        Send feedback</item>
+        <item>        About</item>
+        <item>        More Apps</item>
+        <item>        Version</item>
+    </string-array>
+
+</resources>

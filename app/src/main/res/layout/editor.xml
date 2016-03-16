@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/taskbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative_layout" >
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="7dp" />
+
+        <ImageView
+            android:id="@+id/imageset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imageset1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/updownscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/delete"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ImageButton
+            android:id="@+id/arrowup"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/arrow_top1" />
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/arrowdown"
+            android:background="@drawable/scrollbackver"
+            android:layout_below="@+id/arrowup" >
+
+            <LinearLayout
+                android:id="@+id/llayoutaddbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/arrowdown"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_above="@+id/ho_gallery"
+            android:background="@drawable/arrow_bottom" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/rlbottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ho_gallery"
+        android:src="@drawable/android_delet_" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlbottom"
+        android:layout_toLeftOf="@+id/delete"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/arrowright"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/arrow_right" />
+
+        <Gallery
+            android:id="@+id/ho_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/scrollbackhor"
+            android:layout_toRightOf="@+id/arrowright"
+            android:layout_toLeftOf="@+id/arrowleft"
+            android:spacing="25dp" />
+
+        <ImageButton
+            android:id="@+id/arrowleft"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/arrow_left" />
+    </RelativeLayout>
+<LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

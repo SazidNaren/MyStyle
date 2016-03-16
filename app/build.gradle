@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.ar.photobooth"
+        minSdkVersion 15
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/android-query-0.22.10.jar')
+    compile files('libs/GoogleAdMobAdsSdk-6.4.1.jar')
+    compile files('libs/pinchzoom.jar')
+    compile 'com.android.support:support-v4:23.1.1'
+}
