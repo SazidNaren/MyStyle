@@ -1,82 +1,150 @@
 [
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\android_delet_.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\android_delet_.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_large_white.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/messenger_bubble_large_white.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_bottem.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\arrow_bottem.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_small_white.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/messenger_bubble_small_white.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\back_btn.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\back_btn.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/arrow_top.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/arrow_top.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_bottom.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\arrow_bottom.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/back_btn.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/back_btn.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sett.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\sett.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/check_icon.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/check_icon.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\check_icon.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\check_icon.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_button_like_icon_selected.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\scrollbackhor.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\scrollbackhor.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_button_send_round_shadow.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/messenger_button_send_round_shadow.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\zoom.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\zoom.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/facebook_icon.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/facebook_icon.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\scrollbackver.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\scrollbackver.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_tooltip_black_xout.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\background111.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\background111.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/arrow_bottem.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/arrow_bottem.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\save.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\save.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_send_icon.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_button_send_icon.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_top1.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\arrow_top1.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_tooltip_blue_background.9.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\facebook_icon.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\facebook_icon.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_button_icon.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_button_icon.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\icon.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/arrow_bottom.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/arrow_bottom.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_right.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\arrow_right.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/save.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/save.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\search.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\search.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_tooltip_black_bottomnub.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\imagelist.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\imagelist.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/arrow_left.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/arrow_left.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_top.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\arrow_top.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/scrollbackhor.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/scrollbackhor.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\share_icon.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\share_icon.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_close.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_close.png"
     },
     {
-        "merged": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_left.png",
-        "source": "C:\\Users\\SAZID ALI\\Desktop\\joy_app.tar\\joy_app\\PhotoBooth1\\app\\src\\main\\res\\drawable-hdpi\\arrow_left.png"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/zoom.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/zoom.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/imagelist.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/imagelist.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_large_blue.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/messenger_bubble_large_blue.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/arrow_right.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/arrow_right.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_tooltip_blue_topnub.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_tooltip_black_topnub.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/android_delet_.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/android_delet_.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_tooltip_blue_bottomnub.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/scrollbackver.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/scrollbackver.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/background111.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/background111.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/messenger_bubble_small_blue.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/messenger_bubble_small_blue.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_tooltip_black_background.9.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/search.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/search.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/share_icon.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/share_icon.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/drawable-hdpi/com_facebook_tooltip_blue_xout.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/sett.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/sett.png"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/arrow_top1.png",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/drawable-hdpi/arrow_top1.png"
     }
 ]

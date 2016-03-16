@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        consumerProguardFiles 'consumer-proguard-rules.pro', 'gson.pro', 'simple-fb.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.facebook.android:facebook-android-sdk:4.7.+'
+    // compile project(':facebook')
+    compile 'com.google.code.gson:gson:1.7.2'
+}
+

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ar.photobooth"
+    package="com.mystyle"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -20,75 +20,75 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name="com.ar.mystyle.App"
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.ar.photobooth.SplashScreen"
+            android:name="com.ar.mystyle.activities.SplashScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.ar.photobooth.EditorActivity"
+            android:name="com.ar.mystyle.activities.EditorActivity"
             android:configChanges="orientation"
             android:label="@string/app_name"
-            android:parentActivityName="com.ar.photobooth.MainActivity"
+            android:parentActivityName="com.ar.mystyle.activities.Dashboard"
             android:screenOrientation="portrait" >
         </activity>
-        <!--
-                <meta-data
-                    android:name="com.facebook.sdk.ApplicationId"
-                    android:value="@string/app_id" />
-
-
-                <provider
-                    android:name="com.facebook.NativeAppCallContentProvider"
-                    android:authorities="com.facebook.app.NativeAppCallContentProvider209458345904708123" />
-        -->
-
         <activity
-            android:name="com.ar.photobooth.ImagesList"
+            android:name="com.ar.mystyle.ImagesList"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.ar.photobooth.Canvas"
+            android:name="com.ar.mystyle.activities.Canvas"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.ar.photobooth.RotateActivity"
+            android:name="com.ar.mystyle.RotateActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.ar.photobooth.Settings"
+            android:name="com.ar.mystyle.Settings"
             android:label="@string/app_setting"
-            android:parentActivityName="com.ar.photobooth.MainActivity"
+            android:parentActivityName="com.ar.mystyle.activities.Dashboard"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.ar.photobooth.ImageScreenActivity"
+            android:name="com.ar.mystyle.ImageScreenActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/app_name" >
         </activity>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/app_id" />
+            android:value="@string/fb_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider546054322221354"
+            android:exported="true" />
 
         <activity
-            android:name="com.ar.photobooth.showSavedImage"
-            android:parentActivityName="com.ar.photobooth.MainActivity"
+            android:name="com.ar.mystyle.activities.showSavedImage"
+            android:parentActivityName="com.ar.mystyle.activities.Dashboard"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.ar.photobooth.AlbumActivtiy"
+            android:name="com.ar.mystyle.AlbumActivtiy"
             android:configChanges="keyboardHidden|orientation|screenSize" >
         </activity>
-        <activity android:name="com.ar.photobooth.AlbumPhoto" >
+        <activity android:name="com.ar.mystyle.AlbumPhoto" >
         </activity>
         <activity
-            android:name="com.ar.photobooth.MainActivity"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.ar.mystyle.activities.Dashboard"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" >
             <intent-filter>
