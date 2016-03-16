@@ -15,7 +15,7 @@ import java.util.List;
 import com.ar.mystyle.AlbumPhoto;
 import com.ar.mystyle.CreateAdView;
 import com.ar.mystyle.ImageIds;
-import com.ar.mystyle.getImageAdapterHori;
+import com.ar.mystyle.adapters.getImageAdapterHori;
 import com.imagezoom.ImageAttacher;
 import com.imagezoom.ImageAttacher.OnMatrixChangedListener;
 import com.imagezoom.ImageAttacher.OnPhotoTapListener;

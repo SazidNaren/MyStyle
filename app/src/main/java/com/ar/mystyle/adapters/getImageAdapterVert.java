@@ -1,4 +1,4 @@
-package com.ar.mystyle;
+package com.ar.mystyle.adapters;
 
 
 
@@ -13,19 +13,20 @@ import android.widget.ImageView;
 import com.ar.mystyle.activities.EditorActivity;
 import com.mystyle.R;
 
-public class getImageAdapterHori extends BaseAdapter {
+public class getImageAdapterVert extends BaseAdapter {
 private Context mContext;
-public static Integer[] minageIds=
+private Integer[] minageIds=
 {
 		R.drawable.c14,
-		R.drawable.g6,
+		R.drawable.g7,
 		R.drawable.h8,
 		R.drawable.l6,
+		R.drawable.m7,
 		R.drawable.m13,
 		R.drawable.w8,
 		
 };
-public getImageAdapterHori(Context context)
+public getImageAdapterVert(Context context)
 {
 mContext=context;
 }
