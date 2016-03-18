@@ -62,8 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:padding="7dp"
-            android:src="@drawable/twitter" />
+            android:padding="7dp" />
 
         <View
             android:layout_width="1dip"

@@ -1,19 +1,11 @@
 [
     {
-        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/imageslist.xml",
-        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/imageslist.xml"
-    },
-    {
         "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
         "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/layout/messenger_button_send_white_small.xml"
     },
     {
         "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
         "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/layout/messenger_button_send_white_large.xml"
-    },
-    {
-        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/listitems.xml",
-        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/listitems.xml"
     },
     {
         "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/viewpager.xml",
@@ -24,16 +16,8 @@
         "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/photos.xml",
-        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/photos.xml"
-    },
-    {
         "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/table_portrait.xml",
         "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/table_portrait.xml"
-    },
-    {
-        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/rotate.xml",
-        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/rotate.xml"
     },
     {
         "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
@@ -52,16 +36,8 @@
         "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/layout/com_facebook_tooltip_bubble.xml"
     },
     {
-        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/photo_adapter.xml",
-        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/photo_adapter.xml"
-    },
-    {
         "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
         "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/layout/com_facebook_login_fragment.xml"
-    },
-    {
-        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/test.xml",
-        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/test.xml"
     },
     {
         "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/splash.xml",
@@ -80,16 +56,8 @@
         "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/row.xml"
     },
     {
-        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/imagescreen.xml",
-        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/imagescreen.xml"
-    },
-    {
-        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/album_adapter.xml",
-        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/album_adapter.xml"
-    },
-    {
-        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/album.xml",
-        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/album.xml"
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/show_image_second.xml",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/show_image_second.xml"
     },
     {
         "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/login.xml",
@@ -122,5 +90,9 @@
     {
         "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
         "source": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/layout/messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/layout/show_image_first.xml",
+        "source": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/layout/show_image_first.xml"
     }
 ]

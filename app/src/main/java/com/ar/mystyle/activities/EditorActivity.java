@@ -12,10 +12,9 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 
-import com.ar.mystyle.AlbumPhoto;
-import com.ar.mystyle.CreateAdView;
+import com.ar.mystyle.Util.CreateAdView;
 import com.ar.mystyle.ImageIds;
-import com.ar.mystyle.adapters.getImageAdapterHori;
+import com.ar.mystyle.adapters.GetImageAdapterHori;
 import com.imagezoom.ImageAttacher;
 import com.imagezoom.ImageAttacher.OnMatrixChangedListener;
 import com.imagezoom.ImageAttacher.OnPhotoTapListener;
@@ -130,7 +129,7 @@ public class EditorActivity extends Activity implements ViewFactory {
 		dHeight=dm.heightPixels;
 		dWidth=dm.widthPixels;
 		final ImageIds imgIds=new ImageIds();
-		galleryhoriz.setAdapter(new getImageAdapterHori(this) );
+		galleryhoriz.setAdapter(new GetImageAdapterHori(this) );
 		galleryhoriz.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 				int i; 
@@ -480,21 +479,11 @@ public class EditorActivity extends Activity implements ViewFactory {
 		canvasview = new Canvas(EditorActivity.this);
 		frame.addView(canvasview);
 		if (getIntent().hasExtra("data")) {
-			/*	 ExifInterface exif = new ExifInterface(file);
-		        String orientString = exif.getAttribute(ExifInterface.TAG_ORIENTATION);
-			 */ 
 			bitmap = (Bitmap) getIntent().getExtras().get("data");
-
-			// canvasview.setImage(bitmap);
 			isFirstImage=true;
 			canvasview.setBackground(bitmap);
-
-			// frame.addView(canvasview);
-			// imageView.setImageBitmap(bitmap);
-			// BitmapDrawable dr = new BitmapDrawable(bitmap);
-			// frame.setBackgroundDrawable(dr);
-
-		} else if (getIntent().hasExtra("path")) {
+		}
+		else if (getIntent().hasExtra("path")) {
 			bitmap = decodeSampledBitmapFromResource(getResources(),
 					getIntent().getStringExtra("path"), dWidth/2, dHeight/2);
 			if(!(getIntent().getStringExtra("path").endsWith(".jpg")||getIntent().getStringExtra("path").endsWith(".jpeg")||getIntent().getStringExtra("path").endsWith(".gif")||getIntent().getStringExtra("path").endsWith(".png")))
@@ -502,63 +491,13 @@ public class EditorActivity extends Activity implements ViewFactory {
 				Toast.makeText(getApplicationContext(), "please select an image", Toast.LENGTH_SHORT).show();
 				return; 
 			}
-
-			//imgback1.setImageBitmap(bitmap);
 			isFirstImage=true;
 			canvasview.setBackground(bitmap);
-
-			//frame.addView(canvasview);
-			// canvasview.setImage(bitmap);
-			// BitmapDrawable dr = new BitmapDrawable(bitmap);
-			// frame.setBackgroundDrawable(dr);
-		} else if (getIntent().getExtras().getBoolean("album")) {
-			bitmap= AlbumPhoto.bmap;
-			isFirstImage=true;
-			canvasview.setBackground(bitmap);
-
-
-
-			// frame.addView(canvasview);
 		}
-		// imazeZommer(imageView);
-		// frame.addView(canvasview);
-		/*Save1.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-
-				// TODO Auto-generated method stub
-					try {
-
-					canvasview.setDrawingCacheEnabled(true);
-					canvasview.buildDrawingCache(true);
-					// Dashboard.bitmap2=canvasview.getDrawingCache(true);
-					// Dashboard.bitmap2 = Bitmap.createBitmap(canvasview
-					// .getDrawingCache(true));
-					ImageScreenActivity.bitmap = Bitmap.createBitmap(canvasview
-							.getDrawingCache(true));
-					// Dashboard.mImageView
-					// .setImageBitmap(Dashboard.bitmap2);
-
-					// ImageScreenActivity.imageview
-					// .setImageBitmap(ImageScreenActivity.bitmap);
-					// ImageScreenActivity.bitmap =
-					// Bitmap.createBitmap(canvasview
-					// .getDrawingCache(true));
-					// ImageScreenActivity.imageview
-					// .setImageBitmap(ImageScreenActivity.bitmap);
-					canvasview.setDrawingCacheEnabled(false);
-					Intent i = new Intent(EditorActivity.this,
-							ImageScreenActivity.class);
-					// startActivityForResult(i, 1);
-					startActivityForResult(i, 2);
-
-				} catch (Exception ex) {
-					ex.printStackTrace();
-				}
-			}
-		});
-		 */
+		else if (getIntent().getExtras().getBoolean("album")) {
+			isFirstImage=true;
+			canvasview.setBackground(bitmap);
+		}
 	}
 
 
@@ -737,7 +676,7 @@ public class EditorActivity extends Activity implements ViewFactory {
 		case R.id.save:  
 			isSaved=true;
 			canvasview.invalidate();
-			canvasview.setBackgroundResource(R.drawable.background111);
+			canvasview.setBackgroundResource(R.drawable.background);
 			canvasview.setDrawingCacheEnabled(true);
 			canvasview.buildDrawingCache(true);
 			// Dashboard.bitmap2=canvasview.getDrawingCache(true);

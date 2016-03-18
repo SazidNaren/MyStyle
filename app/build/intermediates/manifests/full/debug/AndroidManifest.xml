@@ -20,7 +20,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.ar.mystyle.App"
+        android:name="com.ar.mystyle.Util.App"
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
@@ -36,30 +36,23 @@
             android:label="@string/app_name"
             android:parentActivityName="com.ar.mystyle.activities.Dashboard"
             android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.ar.mystyle.ImagesList"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.ar.mystyle.activities.Canvas"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.ar.mystyle.RotateActivity"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.ar.mystyle.Settings"
+            android:name="com.ar.mystyle.activities.Settings"
             android:label="@string/app_setting"
             android:parentActivityName="com.ar.mystyle.activities.Dashboard"
             android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.ar.mystyle.ImageScreenActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/app_name" >
         </activity>
 
         <meta-data
@@ -72,15 +65,9 @@
             android:exported="true" />
 
         <activity
-            android:name="com.ar.mystyle.activities.showSavedImage"
+            android:name="com.ar.mystyle.activities.ShowSavedImage"
             android:parentActivityName="com.ar.mystyle.activities.Dashboard"
             android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.ar.mystyle.AlbumActivtiy"
-            android:configChanges="keyboardHidden|orientation|screenSize" >
-        </activity>
-        <activity android:name="com.ar.mystyle.AlbumPhoto" >
         </activity>
         <activity
             android:name="com.facebook.FacebookActivity"

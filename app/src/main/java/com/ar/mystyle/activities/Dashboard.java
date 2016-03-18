@@ -1,7 +1,6 @@
 package com.ar.mystyle.activities;
 
-import com.ar.mystyle.CreateAdView;
-import com.ar.mystyle.Settings;
+import com.ar.mystyle.Util.CreateAdView;
 import com.mystyle.R;
 import com.sromku.simple.fb.Permission;
 import com.sromku.simple.fb.SimpleFacebook;
@@ -46,7 +45,7 @@ public class Dashboard extends Activity {
 	Editor editor;
 	SharedPreferences sharedpreferences,recievepreference;
 	static final int REQUEST_TAKE_PHOTO = 1;
-	public static ImageView mImageView;
+//	public static ImageView mImageView;
 	LinearLayout linearl2;
 	SimpleFacebook simpleFacebook;
 	public static final String MyPREFERENCES = "MyPrefs" ;
@@ -87,13 +86,13 @@ public class Dashboard extends Activity {
 		facebookBtn = (TextView) findViewById(R.id.facebook);
 
 		gallerybtn=(TextView)findViewById(R.id.gallery);
-		mImageView = (ImageView) findViewById(R.id.image);
+		//mImageView = (ImageView) findViewById(R.id.image);
 		photo_gallerybtn.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent intent=new Intent(Dashboard.this,showSavedImage.class);
+				Intent intent=new Intent(Dashboard.this,ShowSavedImage.class);
 				startActivity(intent);
 			}
 		});
@@ -174,19 +173,10 @@ public class Dashboard extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 			//	if (Build.VERSION.SDK_INT <19){
-				Intent intent = new Intent();
+				Intent  intent = new Intent(
+						Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 				intent.setType("image/*");
-				intent.setAction(Intent.ACTION_GET_CONTENT);
-				intent.addCategory(Intent.CATEGORY_OPENABLE);
 				startActivityForResult(intent, SELECT_PICTURE);
-			//	} 
-				/*else {
-				    Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-				    intent.addCategory(Intent.CATEGORY_OPENABLE);
-				    intent.setType("image/*");
-				    startActivityForResult(intent, GALLERY_KITKAT_INTENT_CALLED);
-				}*/
-
 			}
 		});
 
@@ -199,29 +189,10 @@ public class Dashboard extends Activity {
 		simpleFacebook.onActivityResult(requestCode, resultCode, data);
 		if (resultCode == RESULT_OK) {
 			if (requestCode == REQUEST_TAKE_PHOTO) {
-
-				/*
-				 * try { String selectedImagePath =
-				 * getAbsolutePath(data.getData()); bitmap =
-				 * decodeSampledBitmapFromResource(getResources(),
-				 * selectedImagePath, 320, 480);
-				 * 
-				 * mImageView.setImageBitmap(bitmap);
-				 * 
-				 * } catch (Exception ex) { ex.printStackTrace();
-				 * 
-				 * 
-				 * }
-				 */
-
 				photo = new Intent(Dashboard.this, EditorActivity.class);
 				photo.putExtras(data);
 				startActivity(photo);
 			} else if (requestCode == SELECT_PICTURE) {
-
-				// Intent i=new Intent(Dashboard.this, EditorActivity.class);
-				// i.putExtra("library_pic", data);
-				// startActivity(i);
 				Uri selectedImage = data.getData();
 				String[] filePathColumn = { MediaStore.Images.Media.DATA };
 

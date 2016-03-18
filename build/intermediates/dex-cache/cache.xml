@@ -1,2 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/sajid/Joy(Backup)/MyStyle/app/libs/GoogleAdMobAdsSdk-6.4.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6262c554ef5744538d526465aa73704810705734">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/GoogleAdMobAdsSdk-6.4.1_fe01e005e79a444a13ef82d4605dd3d763622f6c.jar" />
+    </item>
+    <item
+        jar="/home/sajid/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0_b7f1f9abdc8b2e809d7b3eea27e62d034db7bed3.jar" />
+    </item>
+    <item
+        jar="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.0.0_0a4d60d3485e64127e98d408dbbdb7a3ddb52316.jar" />
+    </item>
+    <item
+        jar="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/MyStyle/simple-fb/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="75fbe634a207c477f40901e285765c8908dfe26b">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/MyStyle-simple-fb-unspecified_e7b9bb4ca9486815bea6a68a46035c3c23b377db.jar" />
+    </item>
+    <item
+        jar="/home/sajid/Joy(Backup)/MyStyle/app/libs/pinchzoom.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4def992b1f41525748db059dfdd21322cc3157e">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/pinchzoom_ea499aed2017108f6a6c7c89a8d81f79dad99379.jar" />
+    </item>
+    <item
+        jar="/home/sajid/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/1.7.2/112366d8158749e25532ebce162232c6e0fb20a5/gson-1.7.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="112366d8158749e25532ebce162232c6e0fb20a5">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/gson-1.7.2_6a0b622b845168f8bd3d560736798a9126b2c706.jar" />
+    </item>
+    <item
+        jar="/home/sajid/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.3.2/d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27/picasso-2.3.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/picasso-2.3.2_a39551df363b0eddf1f71cd99af50bd88fa921a2.jar" />
+    </item>
+    <item
+        jar="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="40e7757d9b06db670062ddb3cf5b30c129b2fd8c">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.0.0_0b2c9c24518050cd7a2667187a4e465c798e446d.jar" />
+    </item>
+    <item
+        jar="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5bdb38b7e4b6094891648c1dc4dc08589b460f97">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.7.0_aa321c2d344a7430b3fd2c634440b2f5569804c8.jar" />
+    </item>
+    <item
+        jar="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0_31f04ed94333d9db582cca3313f187acfb7853c5.jar" />
+    </item>
+    <item
+        jar="/home/sajid/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0_e014d354d7976b933775c308059aa956b9ad357d.jar" />
+    </item>
+    <item
+        jar="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.0_881bf7c44a26f3e06b5b9eceef76f7eae6a22419.jar" />
+    </item>
+
+</items>
