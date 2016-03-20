@@ -17,12 +17,7 @@ public class GetImageAdapterHori extends BaseAdapter {
 private Context mContext;
 public static Integer[] minageIds=
 {
-		R.drawable.c14,
-		R.drawable.g6,
-		R.drawable.h8,
-		R.drawable.l6,
-		R.drawable.m13,
-		R.drawable.w8,
+
 		
 };
 public GetImageAdapterHori(Context context)

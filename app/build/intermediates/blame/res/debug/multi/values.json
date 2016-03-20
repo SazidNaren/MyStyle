@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/res/merged/debug/values/values.xml",
+        "outputFile": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -12,14 +12,14 @@
                     "endOffset": 445
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 669,
+                        "startOffset": 684,
                         "endLine": 25,
                         "endColumn": 19,
-                        "endOffset": 1059
+                        "endOffset": 1084
                     }
                 }
             },
@@ -32,7 +32,7 @@
                     "endOffset": 506
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\cardview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -51,7 +51,7 @@
                     "endOffset": 568
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\cardview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -70,7 +70,7 @@
                     "endOffset": 630
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\cardview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -89,7 +89,7 @@
                     "endOffset": 694
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\cardview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -108,7 +108,7 @@
                     "endOffset": 746
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -127,7 +127,7 @@
                     "endOffset": 817
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -146,7 +146,7 @@
                     "endOffset": 897
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -165,7 +165,7 @@
                     "endOffset": 976
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -184,7 +184,7 @@
                     "endOffset": 1061
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -203,7 +203,7 @@
                     "endOffset": 1145
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -222,7 +222,7 @@
                     "endOffset": 1237
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -241,7 +241,7 @@
                     "endOffset": 1313
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -260,7 +260,7 @@
                     "endOffset": 1397
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -279,7 +279,7 @@
                     "endOffset": 1474
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -298,7 +298,7 @@
                     "endOffset": 1549
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -317,7 +317,7 @@
                     "endOffset": 1616
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -336,7 +336,7 @@
                     "endOffset": 1687
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -355,13 +355,13 @@
                     "endOffset": 1734
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/colors.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 103,
+                        "startOffset": 106,
                         "endColumn": 46,
-                        "endOffset": 145
+                        "endOffset": 148
                     }
                 }
             },
@@ -374,13 +374,13 @@
                     "endOffset": 1782
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/colors.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 55,
+                        "startOffset": 57,
                         "endColumn": 47,
-                        "endOffset": 98
+                        "endOffset": 100
                     }
                 }
             },
@@ -393,7 +393,7 @@
                     "endOffset": 4169
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\cardview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -412,7 +412,7 @@
                     "endOffset": 4226
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\cardview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -431,7 +431,7 @@
                     "endOffset": 4280
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\cardview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -450,7 +450,7 @@
                     "endOffset": 4354
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -469,7 +469,7 @@
                     "endOffset": 4427
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -488,7 +488,7 @@
                     "endOffset": 4500
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -507,7 +507,7 @@
                     "endOffset": 4572
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -526,7 +526,7 @@
                     "endOffset": 4645
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -545,7 +545,7 @@
                     "endOffset": 4718
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -564,7 +564,7 @@
                     "endOffset": 4783
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -583,7 +583,7 @@
                     "endOffset": 4852
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -602,7 +602,7 @@
                     "endOffset": 4917
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -621,7 +621,7 @@
                     "endOffset": 4999
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -640,7 +640,7 @@
                     "endOffset": 5082
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -659,7 +659,7 @@
                     "endOffset": 5163
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -678,7 +678,7 @@
                     "endOffset": 5246
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -697,7 +697,7 @@
                     "endOffset": 5318
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 33,
                         "startColumn": 4,
@@ -716,7 +716,7 @@
                     "endOffset": 5388
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
@@ -735,7 +735,7 @@
                     "endOffset": 5459
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 4,
@@ -754,7 +754,7 @@
                     "endOffset": 5528
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
@@ -773,7 +773,7 @@
                     "endOffset": 5597
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 4,
@@ -792,7 +792,7 @@
                     "endOffset": 5668
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -811,7 +811,7 @@
                     "endOffset": 5743
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\recyclerview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -830,7 +830,7 @@
                     "endOffset": 5809
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\recyclerview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -849,13 +849,13 @@
                     "endOffset": 5890
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 587,
+                        "startOffset": 600,
                         "endColumn": 80,
-                        "endOffset": 663
+                        "endOffset": 676
                     }
                 }
             },
@@ -868,13 +868,13 @@
                     "endOffset": 5948
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 529,
+                        "startOffset": 541,
                         "endColumn": 57,
-                        "endOffset": 582
+                        "endOffset": 594
                     }
                 }
             },
@@ -887,13 +887,13 @@
                     "endOffset": 5993
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 56,
+                        "startOffset": 59,
                         "endColumn": 44,
-                        "endOffset": 96
+                        "endOffset": 99
                     }
                 }
             },
@@ -906,13 +906,13 @@
                     "endOffset": 6042
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 101,
+                        "startOffset": 105,
                         "endColumn": 48,
-                        "endOffset": 145
+                        "endOffset": 149
                     }
                 }
             },
@@ -925,13 +925,13 @@
                     "endOffset": 6091
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 261,
+                        "startOffset": 268,
                         "endColumn": 48,
-                        "endOffset": 305
+                        "endOffset": 312
                     }
                 }
             },
@@ -944,7 +944,7 @@
                     "endOffset": 6206
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 4,
@@ -963,7 +963,7 @@
                     "endOffset": 6324
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
@@ -982,7 +982,7 @@
                     "endOffset": 6419
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
@@ -1001,7 +1001,7 @@
                     "endOffset": 6484
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 4,
@@ -1020,7 +1020,7 @@
                     "endOffset": 6552
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 45,
                         "startColumn": 4,
@@ -1039,7 +1039,7 @@
                     "endOffset": 6612
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
@@ -1058,7 +1058,7 @@
                     "endOffset": 6684
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 47,
                         "startColumn": 4,
@@ -1077,7 +1077,7 @@
                     "endOffset": 6756
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
@@ -1096,7 +1096,7 @@
                     "endOffset": 6847
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 49,
                         "startColumn": 4,
@@ -1115,7 +1115,7 @@
                     "endOffset": 6921
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
@@ -1134,7 +1134,7 @@
                     "endOffset": 6995
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 51,
                         "startColumn": 4,
@@ -1153,7 +1153,7 @@
                     "endOffset": 7078
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
@@ -1172,7 +1172,7 @@
                     "endOffset": 7179
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 53,
                         "startColumn": 4,
@@ -1191,7 +1191,7 @@
                     "endOffset": 7242
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
@@ -1210,7 +1210,7 @@
                     "endOffset": 7307
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 55,
                         "startColumn": 4,
@@ -1229,7 +1229,7 @@
                     "endOffset": 7436
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -1248,13 +1248,13 @@
                     "endOffset": 7490
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 475,
+                        "startOffset": 486,
                         "endColumn": 53,
-                        "endOffset": 524
+                        "endOffset": 535
                     }
                 }
             },
@@ -1267,13 +1267,13 @@
                     "endOffset": 7543
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 150,
+                        "startOffset": 155,
                         "endColumn": 52,
-                        "endOffset": 198
+                        "endOffset": 203
                     }
                 }
             },
@@ -1286,13 +1286,13 @@
                     "endOffset": 7610
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 310,
+                        "startOffset": 318,
                         "endColumn": 66,
-                        "endOffset": 372
+                        "endOffset": 380
                     }
                 }
             },
@@ -1305,13 +1305,13 @@
                     "endOffset": 7661
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 377,
+                        "startOffset": 386,
                         "endColumn": 50,
-                        "endOffset": 423
+                        "endOffset": 432
                     }
                 }
             },
@@ -1324,13 +1324,13 @@
                     "endOffset": 7708
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 428,
+                        "startOffset": 438,
                         "endColumn": 46,
-                        "endOffset": 470
+                        "endOffset": 480
                     }
                 }
             },
@@ -1343,13 +1343,13 @@
                     "endOffset": 7766
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/strings.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 203,
+                        "startOffset": 209,
                         "endColumn": 57,
-                        "endOffset": 256
+                        "endOffset": 262
                     }
                 }
             },
@@ -1362,7 +1362,7 @@
                     "endOffset": 7826
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 59,
                         "startColumn": 4,
@@ -1382,14 +1382,14 @@
                     "endOffset": 8117
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/styles.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 186,
+                        "startOffset": 192,
                         "endLine": 12,
                         "endColumn": 12,
-                        "endOffset": 472
+                        "endOffset": 484
                     }
                 }
             },
@@ -1403,14 +1403,14 @@
                     "endOffset": 8277
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/src/main/res/values/styles.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 510,
+                        "startOffset": 525,
                         "endLine": 17,
                         "endColumn": 12,
-                        "endOffset": 665
+                        "endOffset": 682
                     }
                 }
             },
@@ -1424,7 +1424,7 @@
                     "endOffset": 8743
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\cardview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1445,7 +1445,7 @@
                     "endOffset": 8869
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\cardview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -1466,7 +1466,7 @@
                     "endOffset": 8997
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\cardview-v7\\23.0.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -1487,7 +1487,7 @@
                     "endOffset": 9090
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -1508,7 +1508,7 @@
                     "endOffset": 9228
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 65,
                         "startColumn": 4,
@@ -1529,7 +1529,7 @@
                     "endOffset": 9505
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 68,
                         "startColumn": 4,
@@ -1550,7 +1550,7 @@
                     "endOffset": 9664
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 74,
                         "startColumn": 4,
@@ -1571,7 +1571,7 @@
                     "endOffset": 9804
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 78,
                         "startColumn": 4,
@@ -1592,7 +1592,7 @@
                     "endOffset": 10082
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 81,
                         "startColumn": 4,
@@ -1613,7 +1613,7 @@
                     "endOffset": 10242
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 87,
                         "startColumn": 4,
@@ -1634,7 +1634,7 @@
                     "endOffset": 10732
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 91,
                         "startColumn": 4,
@@ -1655,7 +1655,7 @@
                     "endOffset": 10837
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 102,
                         "startColumn": 4,
@@ -1676,7 +1676,7 @@
                     "endOffset": 10982
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 105,
                         "startColumn": 4,
@@ -1697,7 +1697,7 @@
                     "endOffset": 11127
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 108,
                         "startColumn": 4,
@@ -1718,7 +1718,7 @@
                     "endOffset": 11233
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 111,
                         "startColumn": 4,
@@ -1739,7 +1739,7 @@
                     "endOffset": 11378
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 114,
                         "startColumn": 4,
@@ -1760,7 +1760,7 @@
                     "endOffset": 11523
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 117,
                         "startColumn": 4,
@@ -1781,7 +1781,7 @@
                     "endOffset": 12124
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 122,
                         "startColumn": 4,
@@ -1802,7 +1802,7 @@
                     "endOffset": 12303
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 133,
                         "startColumn": 4,
@@ -1823,7 +1823,7 @@
                     "endOffset": 12650
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 136,
                         "startColumn": 4,
@@ -1844,7 +1844,7 @@
                     "endOffset": 12901
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 141,
                         "startColumn": 4,
@@ -1865,7 +1865,7 @@
                     "endOffset": 13083
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 145,
                         "startColumn": 4,
@@ -1886,7 +1886,7 @@
                     "endOffset": 13407
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 148,
                         "startColumn": 4,
@@ -1907,7 +1907,7 @@
                     "endOffset": 13767
                 },
                 "from": {
-                    "file": "/home/sajid/Joy(Backup)/MyStyle/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.7.0/res/values/values.xml",
+                    "file": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 153,
                         "startColumn": 4,

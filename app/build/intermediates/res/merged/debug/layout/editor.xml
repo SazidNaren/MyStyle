@@ -43,43 +43,38 @@
 
     <RelativeLayout
         android:id="@+id/updownscroll"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentRight="true"
         android:layout_above="@+id/delete"
         android:orientation="vertical"
         android:visibility="invisible" >
 
-        <ImageButton
-            android:id="@+id/arrowup"
-            android:layout_width="80dp"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_select_images"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:background="@drawable/arrow_top1" />
-
+            android:layout_marginTop="200dp"
+            android:visibility="gone"
+            android:background="@drawable/scrollbackver">
+        </android.support.v7.widget.RecyclerView>
         <ScrollView
             android:id="@+id/scrollview"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/arrowdown"
+            android:visibility="gone"
             android:background="@drawable/scrollbackver"
             android:layout_below="@+id/arrowup" >
 
             <LinearLayout
                 android:id="@+id/llayoutaddbtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="vertical" >
             </LinearLayout>
         </ScrollView>
 
-        <ImageButton
-            android:id="@+id/arrowdown"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_above="@+id/ho_gallery"
-            android:background="@drawable/arrow_bottom" />
     </RelativeLayout>
 
     <ImageView
@@ -88,7 +83,6 @@
         android:layout_height="60dp"
         android:layout_above="@+id/rlbottom"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/ho_gallery"
         android:src="@drawable/android_delet_" />
 
     <RelativeLayout
