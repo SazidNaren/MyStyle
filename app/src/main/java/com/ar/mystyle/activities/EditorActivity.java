@@ -69,7 +69,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 	String filePath=null;
 	Bitmap Capfground,Goggfground,MHeirfground,Lipsfground,Beardfground,WHeirfground;
 	static Bitmap hideback;
-//	LinearLayout llayoutbtnadd;
+	//LinearLayout llayoutbtnadd;
 	Gallery galleryhoriz;
 	static boolean isimagesaved;
 	FrameLayout frame;
@@ -114,7 +114,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				.getMetrics(dm);
 		dHeight=dm.heightPixels;
 		dWidth=dm.widthPixels;
-		final ImageIds imgIds=new ImageIds();
+		final ImageIds imgIds=ImageIds.getInstance(this);
 		galleryhoriz.setAdapter(new GetImageAdapterHori(this));
 		galleryhoriz.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
@@ -122,7 +122,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				int i;
 				switch (position) {
 					case 0:
-						for (i = 0; i < imgIds.getImageIdCaps().length; i++) {
+						for (i = 0; i < imgIds.getImageIdCaps().size(); i++) {
 							imageAdapter=new SelectImageAdapter(0,imgIds.getImageIdCaps(),EditorActivity.this,EditorActivity.this);
 							recyclerView.setAdapter(imageAdapter);
 							recyclerView.setVisibility(View.VISIBLE);
@@ -131,8 +131,8 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 							imgview.setId(i);
 							LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(Canvas.widthScreen / 4, Canvas.heightScreen / 5);
 							imgview.setLayoutParams(layoutParams);
-							imgview.setImageResource(imgIds.getImageIdCaps()[i]);
-							llayoutbtnadd.addView(imgview);
+							imgview.setImageDrawable(imgIds.getImageIdCaps().get(i));
+						//	llayoutbtnadd.addView(imgview);
 							updownscroll1.setVisibility(View.VISIBLE);
 							final int j = i;
 							IscapDeleted = true;
@@ -142,7 +142,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 								public void onClick(View arg0) {
 									// TODO Auto-generated method stub
 									IscapDeleted = false;
-									Capfground = BitmapFactory.decodeResource(getResources(), imgIds.getImageIdCaps()[j]);
+									Capfground =  ((BitmapDrawable)imgIds.getImageIdCaps().get(j)).getBitmap();
 									canvasview.setForeground(Capfground);
 									Iscapselected = true;
 									updownscroll1.setVisibility(View.INVISIBLE);
@@ -164,16 +164,12 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 						recyclerView.setAdapter(imageAdapter);
 						recyclerView.setVisibility(View.VISIBLE);
 
-						for (i = 0; i < imgIds.getImageIdGoggles().length; i++) {
-
-
-
-
+						for (i = 0; i < imgIds.getImageIdGoggles().size(); i++) {
 							ImageView imgview = new ImageView(getApplicationContext());
-							imgview.setImageResource(imgIds.getImageIdGoggles()[i]);
+							imgview.setImageDrawable(imgIds.getImageIdGoggles().get(i));
 							LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(Canvas.widthScreen / 4, Canvas.heightScreen / 5);
 							imgview.setLayoutParams(layoutParams);
-							llayoutbtnadd.addView(imgview);
+						//	llayoutbtnadd.addView(imgview);
 							updownscroll1.setVisibility(View.VISIBLE);
 							final int j = i;
 							setAllSelectedFalse();
@@ -184,7 +180,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 								public void onClick(View arg0) {
 									// TODO Auto-generated method stub
 									isGoggleDeleted = false;
-									Goggfground = BitmapFactory.decodeResource(getResources(), imgIds.getImageIdGoggles()[j]);
+									Goggfground = 	MHeirfground = ((BitmapDrawable)imgIds.getImageIdGoggles().get(j)).getBitmap();
 									canvasview.setForeground(Goggfground);
 									canvasview.invalidate();
 									isGoggleSelected = true;
@@ -209,13 +205,13 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 						recyclerView.setAdapter(imageAdapter);
 						recyclerView.setVisibility(View.VISIBLE);
 
-						for (i = 0; i < imgIds.getImageIsHeirs().length; i++) {
+						for (i = 0; i < imgIds.getImageIsHeirs().size(); i++) {
 							ImageView imgview = new ImageView(getApplicationContext());
-							imgview.setImageResource(imgIds.getImageIsHeirs()[i]);
+							imgview.setImageDrawable(imgIds.getImageIsHeirs().get(i));
 							LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(Canvas.widthScreen / 4, Canvas.heightScreen / 5);
 							imgview.setLayoutParams(layoutParams);
 							updownscroll1.setVisibility(View.VISIBLE);
-							llayoutbtnadd.addView(imgview);
+						//	llayoutbtnadd.addView(imgview);
 							final int j = i;
 							setAllSelectedFalse();
 							isManHeirDeleted = true;
@@ -225,7 +221,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 								public void onClick(View arg0) {
 									// TODO Auto-generated method stub
 									isManHeirDeleted = false;
-									MHeirfground = BitmapFactory.decodeResource(getResources(), imgIds.getImageIsHeirs()[j]);
+									MHeirfground = ((BitmapDrawable)imgIds.getImageIsHeirs().get(j)).getBitmap();
 									canvasview.setForeground(MHeirfground);
 									canvasview.invalidate();
 									isManHeirSelected = true;
@@ -246,13 +242,13 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 						});
 						break;
 					case 3:
-						for (i = 0; i < imgIds.getImageIsLips().length; i++) {
+						for (i = 0; i < imgIds.getImageIsLips().size(); i++) {
 							ImageView imgview = new ImageView(getApplicationContext());
-							imgview.setImageResource(imgIds.getImageIsLips()[i]);
+							imgview.setImageDrawable(imgIds.getImageIsLips().get(i));
 							LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(Canvas.widthScreen / 4, Canvas.heightScreen / 5);
 							imgview.setLayoutParams(layoutParams);
 							updownscroll1.setVisibility(View.VISIBLE);
-							llayoutbtnadd.addView(imgview);
+						//	llayoutbtnadd.addView(imgview);
 							final int j = i;
 							setAllSelectedFalse();
 							isLipsDeleted = true;
@@ -262,7 +258,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 								public void onClick(View arg0) {
 									// TODO Auto-generated method stub
 									isLipsDeleted = false;
-									Lipsfground = BitmapFactory.decodeResource(getResources(), imgIds.getImageIsLips()[j]);
+									Lipsfground = ((BitmapDrawable)imgIds.getImageIsLips().get(j)).getBitmap();
 									canvasview.setForeground(Lipsfground);
 									canvasview.invalidate();
 									isLipsSelected = true;
@@ -283,13 +279,13 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 						});
 						break;
 					case 4:
-						for (i = 0; i < imgIds.getImageIsMouths().length; i++) {
+						for (i = 0; i < imgIds.getImageIsMouths().size(); i++) {
 							ImageView imgview = new ImageView(getApplicationContext());
-							imgview.setImageResource(imgIds.getImageIsMouths()[i]);
+							imgview.setImageDrawable(imgIds.getImageIsMouths().get(i));
 							LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(Canvas.widthScreen / 4, Canvas.heightScreen / 5);
 							imgview.setLayoutParams(layoutParams);
 							updownscroll1.setVisibility(View.VISIBLE);
-							llayoutbtnadd.addView(imgview);
+						//	llayoutbtnadd.addView(imgview);
 							final int j = i;
 							setAllSelectedFalse();
 							isBeardDeleted = true;
@@ -299,7 +295,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 								public void onClick(View arg0) {
 									// TODO Auto-generated method stub
 									isBeardDeleted = false;
-									Beardfground = BitmapFactory.decodeResource(getResources(), imgIds.getImageIsMouths()[j]);
+									Beardfground = ((BitmapDrawable)(imgIds.getImageIsMouths().get(j))).getBitmap();
 									canvasview.setForeground(Beardfground);
 									canvasview.invalidate();
 									isBeardSelected = true;
@@ -318,13 +314,13 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 						});
 						break;
 					case 5:
-						for (i = 0; i < imgIds.getImageIsW_Heir().length; i++) {
+						for (i = 0; i < imgIds.getImageIsW_Heir().size(); i++) {
 							ImageView imgview = new ImageView(getApplicationContext());
-							imgview.setImageResource(imgIds.getImageIsW_Heir()[i]);
+							imgview.setImageDrawable(imgIds.getImageIsW_Heir().get(i));
 							LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(Canvas.widthScreen / 4, Canvas.heightScreen / 5);
 							imgview.setLayoutParams(layoutParams);
 							updownscroll1.setVisibility(View.VISIBLE);
-							llayoutbtnadd.addView(imgview);
+							//llayoutbtnadd.addView(imgview);
 							final int j = i;
 							setAllSelectedFalse();
 							isWomanHeirDeleted = true;
@@ -334,7 +330,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 								public void onClick(View arg0) {
 									// TODO Auto-generated method stub
 									isWomanHeirDeleted = false;
-									WHeirfground = BitmapFactory.decodeResource(getResources(), imgIds.getImageIsW_Heir()[j]);
+									WHeirfground =  ((BitmapDrawable)(imgIds.getImageIsW_Heir().get(j))).getBitmap();
 									canvasview.setForeground(WHeirfground);
 									canvasview.invalidate();
 									isWomanHeirSElected = true;

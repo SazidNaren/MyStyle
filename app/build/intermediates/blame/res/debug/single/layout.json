@@ -28,12 +28,12 @@
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\com_facebook_tooltip_bubble.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\viewpager.xml"
-    },
-    {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\editor.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\editor.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\viewpager.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
@@ -52,12 +52,12 @@
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_blue_round.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_white_large.xml"
-    },
-    {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_white_large.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_image_first.xml",
@@ -68,12 +68,12 @@
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_blue_large.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\showsavedimage.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\showsavedimage.xml"
-    },
-    {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\showsavedimage.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\showsavedimage.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_facebook.xml",

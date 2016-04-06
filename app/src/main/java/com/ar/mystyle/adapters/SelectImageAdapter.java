@@ -2,6 +2,7 @@ package com.ar.mystyle.adapters;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,17 +17,18 @@ import com.squareup.picasso.Picasso;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by sajid on 18/3/16.
  */
 public class SelectImageAdapter extends RecyclerView.Adapter<SelectImageAdapter.ViewHolder1>  {
-    private Integer[] images;
+    private List<Drawable> images;
     private Context context;
     private ClickListener clickListener;
     private int type;
 
-    public SelectImageAdapter(int type,Integer[] images, Context context, ClickListener clickListener)
+    public SelectImageAdapter(int type,List<Drawable> images, Context context, ClickListener clickListener)
     {
         this.images=images;
         this.context=context;
@@ -49,7 +51,7 @@ public class SelectImageAdapter extends RecyclerView.Adapter<SelectImageAdapter.
         /*Uri uri = Uri.fromFile(new File(images.get(position)));
         Picasso.with(context).load(uri)
                 .into(holder.imageView);*/
-        holder.imageView.setImageResource(images[position]);
+        holder.imageView.setImageDrawable(images.get(position));
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,7 +71,7 @@ public class SelectImageAdapter extends RecyclerView.Adapter<SelectImageAdapter.
 
     @Override
     public int getItemCount() {
-        return images.length;
+        return images.size();
     }
 
 

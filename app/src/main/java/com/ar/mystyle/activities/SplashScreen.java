@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.ar.mystyle.ImageIds;
 import com.mystyle.R;
 
 public class SplashScreen extends Activity{
@@ -20,6 +21,7 @@ public class SplashScreen extends Activity{
 			@Override
 			public void run() {
 
+				ImageIds imageIds=ImageIds.getInstance(SplashScreen.this);
 				SplashScreen.this.startActivity(mainIntent);
 				SplashScreen.this.finish(); 
 
