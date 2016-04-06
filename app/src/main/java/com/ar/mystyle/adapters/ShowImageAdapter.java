@@ -49,7 +49,7 @@ public class ShowImageAdapter extends RecyclerView.Adapter<ShowImageAdapter.View
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickListener.onItemClick(position);
+                clickListener.onItemClick(position,0);
             }
         });
         holder.imageView.setOnLongClickListener(new View.OnLongClickListener() {

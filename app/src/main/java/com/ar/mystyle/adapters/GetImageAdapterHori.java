@@ -24,12 +24,12 @@ public class GetImageAdapterHori extends BaseAdapter {
 	{
 		mContext=context;
 		ImageIds imageIds=ImageIds.getInstance(context);
-		minageIds.add(imageIds.getImageIdCaps().get(0));
-		minageIds.add(imageIds.getImageIdGoggles().get(0));
-		minageIds.add(imageIds.getImageIsHeirs().get(0));
+		minageIds.add(imageIds.getImageIdCaps().get(10));
+		minageIds.add(imageIds.getImageIdGoggles().get(14));
+		minageIds.add(imageIds.getImageIsHeirs().get(2));
 		minageIds.add(imageIds.getImageIsLips().get(0));
-		minageIds.add(imageIds.getImageIsMouths().get(0));
-		minageIds.add(imageIds.getImageIsW_Heir().get(0));
+		minageIds.add(imageIds.getImageIsMouths().get(22));
+		minageIds.add(imageIds.getImageIsW_Heir().get(3));
 
 	}
 	@Override
@@ -56,7 +56,7 @@ public class GetImageAdapterHori extends BaseAdapter {
 		// TODO Auto-generated method stub
 		ImageView i=new ImageView(mContext);
 		i.setImageDrawable(minageIds.get(index));
-		i.setScaleType(ImageView.ScaleType.FIT_XY);
+		i.setScaleType(ImageView.ScaleType.FIT_CENTER);
 		i.setLayoutParams(new Gallery.LayoutParams((EditorActivity.dWidth/5),(EditorActivity.dHeight/7)));
 		return i;
 	}

@@ -55,7 +55,7 @@ public class SelectImageAdapter extends RecyclerView.Adapter<SelectImageAdapter.
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickListener.onItemClick(position);
+                clickListener.onItemClick(type,position);
             }
         });
         holder.imageView.setOnLongClickListener(new View.OnLongClickListener() {

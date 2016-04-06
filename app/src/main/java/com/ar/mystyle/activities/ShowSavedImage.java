@@ -81,7 +81,7 @@ public class ShowSavedImage extends Activity implements ClickListener{
 	}
 
 	@Override
-	public void onItemClick(int position) {
+	public void onItemClick(int position,int flag) {
 		Uri uri = Uri.fromFile(new File(images.get(position)));
 		Intent intent=new Intent(Intent.ACTION_VIEW);
 		intent.setDataAndType(uri, "image/*");

@@ -13,8 +13,6 @@ import android.util.DisplayMetrics;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.ar.mystyle.activities.EditorActivity;
-
 @SuppressLint("DrawAllocation")
 public class Canvas extends View {
 
@@ -230,13 +228,13 @@ public class Canvas extends View {
 
 	private void selectedItemforchange() {
 		// TODO Auto-generated method stub
-		if(EditorActivity.IscapDeleted)
+		if(EditorActivity.isCapDeleted)
 		{
 			if(Capfground!=null)
 			{
 				matrix=cmatrix;
 				foreground=Capfground;
-				EditorActivity.IscapDeleted=false;
+				EditorActivity.isCapDeleted =false;
 				Capfground=null;
 				EditorActivity.Iscapselected=true;
 			}
