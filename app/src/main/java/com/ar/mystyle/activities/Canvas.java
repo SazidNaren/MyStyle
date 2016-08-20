@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.graphics.PointF;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.text.Selection;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
@@ -16,8 +17,6 @@ import android.view.View;
 @SuppressLint("DrawAllocation")
 public class Canvas extends View {
 
-	Paint paint;
-	Paint paint1;
 	boolean flag = false;
 
 	// new code attributes
@@ -34,10 +33,12 @@ public class Canvas extends View {
 	private static final int NONE = 0;
 	private static final int DRAG = 1;
 	private static final int ZOOM = 2;
+	enum Selected{GOGGLE,MHAIR,WHAIR, BEARD,CAP,LIPS,NOTHING};
+	Selected CurrentSelection;
 	int mode = NONE;
 	RectF rect2,rect3;
 	boolean matrixCheck = false;
-
+	boolean isRandomSelect=false;
 	Bitmap background,foreground;
 	static Bitmap Capfground,Goggfground,MHeirfground,Lipsfground,Beardfground,WHeirfground;
 	static Matrix cmatrix,gmatrix,mhmatrix,lmatrix,bmatrix,whmatrix;
@@ -47,7 +48,7 @@ public class Canvas extends View {
 	Context context;
 
 	// end
-		public Canvas(Context context, AttributeSet attrs, int defStyle) {
+	public Canvas(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		this.context = context;
 		// TODO Auto-generated constructor stub
@@ -58,7 +59,7 @@ public class Canvas extends View {
 		this.context = context;
 		DisplayMetrics dm = new DisplayMetrics();
 		((Activity) context).getWindowManager().getDefaultDisplay()
-		.getMetrics(dm);        
+				.getMetrics(dm);
 		widthScreen = dm.widthPixels;
 		heightScreen = dm.heightPixels;
 		rect2=new RectF();
@@ -70,9 +71,6 @@ public class Canvas extends View {
 
 	public static int loop = 1;
 
-	public Bitmap getViewBackground() {
-		return background;
-	}
 
 	public void setBackground(Bitmap background) {
 		this.background = background;
@@ -81,98 +79,47 @@ public class Canvas extends View {
 		loop = 1;
 
 	}
-
-/*	public Bitmap getForeground() {
-
-		return foreground;
-
-	}*/
-
-	public void setForeground(Bitmap foreground) {
+	void setForeground(Bitmap foreground) {
 		this.foreground = foreground;
-		// gintam = foreground;
-	//	matrix.set(null);
 		flag = true;
 		loop = 0;
 	}
-
-	float t1, t2, t3, t4, w = 100, h = 100;
-	float k1, k2;
-
-	float x = 160, y = 240;
-	int pointer_first;
-	int pointer_id_first;
-	int pointer_second;
-	int pointer_id_second;
-
-	boolean isTransform;
-	boolean isTranslate = true;
 
 	public Canvas(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
 
-	float tx, ty, sx, sy;
-	Rect rect = new Rect();
-	float transx, transy, width, height, scaleX, scaleY, skewX, skewY;
-	Matrix myNeo;
-
-	// Matrix newForeGround;
-
 	@Override
 	protected void onDraw(android.graphics.Canvas canvas) {
 		// TODO Auto-generated method stub
 		deleteItemsforchnage();
+//		if(!isRandomSelect)
 		selectedItemforchange();
 		saveMatrixOfItemas();
-        
 		try {
-			if (flag == false) {
-				myNeo = new Matrix(matrix);
-
-				// if (EditorActivity.bagFlag == false) {
-				if(gintam!=null)
-				{
-					if(EditorActivity.isFirstImage)
-		
-						setFirstImageMatrix();
-
-				}
-				canvas.drawBitmap(gintam, matrix, null);
-
-			} else if (flag == true) {
-
-				int i = 1;
-				canvas.drawBitmap(gintam, myNeo, null);
+			if (flag ) {
 				canvas.drawBitmap(foreground, matrix, null);
-
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		
-		if(Goggfground!=null )
-		{
+
+		if (Goggfground != null && foreground!=Goggfground) {
 			canvas.drawBitmap(Goggfground, gmatrix, null);
 		}
-		if(MHeirfground!=null)
-		{
+		if (MHeirfground != null && foreground!=MHeirfground) {
 			canvas.drawBitmap(MHeirfground, mhmatrix, null);
 		}
-		if(Capfground!=null)
-		{
+		if (Capfground != null && foreground!=Capfground) {
 			canvas.drawBitmap(Capfground, cmatrix, null);
 		}
-		if(Lipsfground!=null)
-		{
+		if (Lipsfground != null && foreground!=Lipsfground) {
 			canvas.drawBitmap(Lipsfground, lmatrix, null);
 		}
-		if(Beardfground!=null )
-		{
+		if (Beardfground != null && foreground!=Beardfground) {
 			canvas.drawBitmap(Beardfground, bmatrix, null);
 		}
-		if(WHeirfground!=null)
-		{
+		if (WHeirfground != null && foreground!=WHeirfground) {
 			canvas.drawBitmap(WHeirfground, whmatrix, null);
 		}
 	}
@@ -183,7 +130,7 @@ public class Canvas extends View {
 			cmatrix=null;
 			foreground=EditorActivity.hideback;
 			EditorActivity.capdelete=false;
-			EditorActivity.Iscapselected=false;
+			EditorActivity.isCapselected =false;
 
 		}
 		else if (EditorActivity.googgledelete) {
@@ -219,7 +166,7 @@ public class Canvas extends View {
 			whmatrix=null;
 			foreground=EditorActivity.hideback;
 			EditorActivity.womanheirdelete=false;
-			EditorActivity.isWomanHeirSElected=false;
+			EditorActivity.isWomanHeirSelected =false;
 		}
 
 		// TODO Auto-generated method stub
@@ -236,7 +183,7 @@ public class Canvas extends View {
 				foreground=Capfground;
 				EditorActivity.isCapDeleted =false;
 				Capfground=null;
-				EditorActivity.Iscapselected=true;
+				EditorActivity.isCapselected =true;
 			}
 			else
 				foreground=EditorActivity.hideback;
@@ -301,7 +248,7 @@ public class Canvas extends View {
 				foreground=WHeirfground;
 				EditorActivity.isWomanHeirDeleted=false;
 				WHeirfground=null;
-				EditorActivity.isWomanHeirSElected=true;
+				EditorActivity.isWomanHeirSelected =true;
 			}else
 				foreground=EditorActivity.hideback;
 
@@ -311,7 +258,7 @@ public class Canvas extends View {
 	private void saveMatrixOfItemas() {
 		// TODO Auto-generated method stub
 
-		if(EditorActivity.Iscapselected)
+		if(EditorActivity.isCapselected)
 		{
 			cmatrix=new Matrix(matrix);
 			Capfground=foreground;
@@ -336,7 +283,7 @@ public class Canvas extends View {
 			mhmatrix=new Matrix(matrix);
 			MHeirfground=foreground;
 		}
-		else if(EditorActivity.isWomanHeirSElected)
+		else if(EditorActivity.isWomanHeirSelected)
 		{
 			whmatrix=new Matrix(matrix);
 			WHeirfground=foreground;
@@ -357,54 +304,129 @@ public class Canvas extends View {
 	public boolean onTouchEvent(MotionEvent event) {
 		// TODO Auto-generated method stub
 		switch (event.getAction() & MotionEvent.ACTION_MASK) {
-		case MotionEvent.ACTION_DOWN:
-			mode = DRAG;
-			x_down = event.getX();
-			y_down = event.getY();
-			savedMatrix.set(matrix);
-			EditorActivity.isimagesaved=false;
-			EditorActivity.isFirstImage=false;
-			EditorActivity.updownscroll1.setVisibility(INVISIBLE);
-			break;
-		case MotionEvent.ACTION_POINTER_DOWN:
-			mode = ZOOM;
-			oldDist = (float) spacing(event);
-			oldRotation = rotation(event);
-			savedMatrix.set(matrix);
-			midPoint(mid, event);
-			break;
-		case MotionEvent.ACTION_MOVE:
-			if (mode == ZOOM) {
-				matrix1.set(savedMatrix);
-				float rotation = rotation(event) - oldRotation;
-				float newDist = (float) spacing(event);
-				float scale = newDist / oldDist;
-				matrix1.postScale(scale, scale, mid.x, mid.y);//
-				matrix1.postRotate(rotation, mid.x, mid.y);//
-				matrixCheck = matrixCheck();
-				if (matrixCheck == false) {
-					matrix.set(matrix1);
-					invalidate();
+			case MotionEvent.ACTION_DOWN:
+				isRandomSelect=false;
+				CurrentSelection=Selected.NOTHING;
+				if(getTouchBitmap(event)!=null)
+				{
+					isRandomSelect=true;
+					matrix=new Matrix(getTouchBitmap(event));
 				}
-			} else if (mode == DRAG) {
-				matrix1.set(savedMatrix);
-				matrix1.postTranslate(event.getX() - x_down, event.getY()
-						- y_down);//
-				matrixCheck = matrixCheck();
-				matrixCheck = matrixCheck();
-				if (matrixCheck == false) {
-					matrix.set(matrix1);
-					invalidate();
+				mode = DRAG;
+				x_down = event.getX();
+				y_down = event.getY();
+				savedMatrix.set(matrix);
+				EditorActivity.isimagesaved=false;
+				//	EditorActivity.isFirstImage=false;
+				EditorActivity.updownscroll1.setVisibility(INVISIBLE);
+				break;
+			case MotionEvent.ACTION_POINTER_DOWN:
+				mode = ZOOM;
+				oldDist = (float) spacing(event);
+				oldRotation = rotation(event);
+				savedMatrix.set(matrix);
+				midPoint(mid, event);
+				break;
+			case MotionEvent.ACTION_MOVE:
+				if (mode == ZOOM) {
+					matrix1.set(savedMatrix);
+					float rotation = rotation(event) - oldRotation;
+					float newDist = (float) spacing(event);
+					float scale = newDist / oldDist;
+					matrix1.postScale(scale, scale, mid.x, mid.y);//
+					matrix1.postRotate(rotation, mid.x, mid.y);//
+					matrixCheck = matrixCheck();
+					if (matrixCheck == false) {
+						matrix.set(matrix1);
+						invalidate();
+					}
+				} else if (mode == DRAG) {
+					matrix1.set(savedMatrix);
+					matrix1.postTranslate(event.getX() - x_down, event.getY()
+							- y_down);//
+					matrixCheck = matrixCheck();
+					matrixCheck = matrixCheck();
+					if (matrixCheck == false) {
+						matrix.set(matrix1);
+						invalidate();
+					}
 				}
-			}
-			break;
-		case MotionEvent.ACTION_UP:
-		case MotionEvent.ACTION_POINTER_UP:
-
-			mode = NONE;
-			break;
+				break;
+			case MotionEvent.ACTION_UP:
+			case MotionEvent.ACTION_POINTER_UP:
+				mode = NONE;
+				break;
 		}
 		return true;
+	}
+
+	private Matrix getTouchBitmap(MotionEvent event) {
+
+		if(bmatrix!=null && checkStatus(bmatrix,EditorActivity.Beardfground,event)) {
+			setAllSelectedFalse();
+			EditorActivity.isBeardDeleted = false;
+			setForeground(Beardfground);
+			EditorActivity.isBeardSelected = true;
+			CurrentSelection=Selected.BEARD;
+			//	invalidate();
+			return bmatrix;
+		}
+		else if(cmatrix!=null&& checkStatus(cmatrix,EditorActivity.Capfground,event)) {
+			setAllSelectedFalse();
+			EditorActivity.isCapDeleted = false;
+			setForeground(Capfground);
+			EditorActivity.isCapselected = true;
+			CurrentSelection=Selected.CAP;
+			//	invalidate();
+			return cmatrix;
+		}
+		else if(gmatrix!=null && checkStatus(gmatrix,EditorActivity.Goggfground,event)) {
+			setAllSelectedFalse();
+			EditorActivity.isGoggleDeleted = false;
+			setForeground(Goggfground);
+			EditorActivity.isGoggleSelected = true;
+			CurrentSelection=Selected.GOGGLE;
+			//	invalidate();
+			return gmatrix;
+		}
+		else if(mhmatrix!=null && checkStatus(mhmatrix,EditorActivity.MHeirfground,event)) {
+			setAllSelectedFalse();
+			EditorActivity.isManHeirDeleted = false;
+			setForeground(MHeirfground);
+			EditorActivity.isManHeirSelected = true;
+			CurrentSelection=Selected.MHAIR;
+			//	invalidate();
+			return mhmatrix;
+		}
+		else if(whmatrix!=null && checkStatus(whmatrix,EditorActivity.WHeirfground,event)) {
+			setAllSelectedFalse();
+			EditorActivity.isWomanHeirDeleted = false;
+			setForeground(WHeirfground);
+			EditorActivity.isWomanHeirSelected = true;
+			//invalidate();
+			CurrentSelection=Selected.WHAIR;
+			return whmatrix;
+		}
+		else if(lmatrix!=null && checkStatus(lmatrix,EditorActivity.Lipsfground,event)) {
+			setAllSelectedFalse();
+			EditorActivity.isLipsDeleted = false;
+			setForeground(Lipsfground);
+			EditorActivity.isLipsSelected = true;
+			CurrentSelection=Selected.LIPS;
+			//invalidate();
+			return lmatrix;
+		}
+		return null;
+	}
+
+	private boolean checkStatus(Matrix bmatrix, Bitmap beardfground,MotionEvent  event) {
+		float[] values = new float[9];
+		float x=event.getX();
+		float y=event.getY();
+		bmatrix.getValues(values);
+		if (x > values[2] && x < values[2] + beardfground.getWidth() && y > values[5] && y < values[5] +beardfground.getHeight())
+			return true;
+		return false;
 	}
 
 	private boolean matrixCheck() {
@@ -429,11 +451,11 @@ public class Canvas extends View {
 		if ((x1 < widthScreen / 6 && x2 < widthScreen / 6
 				&& x3 < widthScreen / 6 && x4 < widthScreen / 6)
 				|| (x1 > widthScreen * 2 / 3 && x2 > widthScreen * 2 / 3
-						&& x3 > widthScreen * 2 / 3 && x4 > widthScreen * 2 / 3)
-						|| (y1 < heightScreen / 3 && y2 < heightScreen / 3
-								&& y3 < heightScreen / 6 && y4 < heightScreen / 6)
-								|| (y1 > heightScreen * 4 / 6 && y2 > heightScreen * 4 / 6
-										&& y3 > heightScreen * 2 / 3 && y4 > heightScreen * 2 / 3)) {
+				&& x3 > widthScreen * 2 / 3 && x4 > widthScreen * 2 / 3)
+				|| (y1 < heightScreen / 3 && y2 < heightScreen / 3
+				&& y3 < heightScreen / 6 && y4 < heightScreen / 6)
+				|| (y1 > heightScreen * 4 / 6 && y2 > heightScreen * 4 / 6
+				&& y3 > heightScreen * 2 / 3 && y4 > heightScreen * 2 / 3)) {
 			return true;
 		}
 		return false;
@@ -459,5 +481,13 @@ public class Canvas extends View {
 		double radians = Math.atan2(delta_y, delta_x);
 		return (float) Math.toDegrees(radians);
 	}
-
+	private void setAllSelectedFalse()
+	{
+		EditorActivity.isBeardSelected=false;
+		EditorActivity.isManHeirSelected=false;
+		EditorActivity.isGoggleSelected=false;
+		EditorActivity.isCapselected=false;
+		EditorActivity.isWomanHeirSelected=false;
+		EditorActivity.isLipsSelected=false;
+	}
 }

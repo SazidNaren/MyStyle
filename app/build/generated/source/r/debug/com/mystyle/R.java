@@ -78,7 +78,7 @@ containing a value of this type.
 <tr><td><code>top</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int com_facebook_auxiliary_view_position=0x7f010013;
+        public static final int com_facebook_auxiliary_view_position=0x7f010019;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -86,7 +86,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int com_facebook_confirm_logout=0x7f010015;
+        public static final int com_facebook_confirm_logout=0x7f01001b;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -95,7 +95,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int com_facebook_foreground_color=0x7f01000f;
+        public static final int com_facebook_foreground_color=0x7f010015;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -107,7 +107,7 @@ containing a value of this type.
 <tr><td><code>right</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int com_facebook_horizontal_alignment=0x7f010014;
+        public static final int com_facebook_horizontal_alignment=0x7f01001a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -115,7 +115,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int com_facebook_is_cropped=0x7f01001a;
+        public static final int com_facebook_is_cropped=0x7f010020;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -123,7 +123,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int com_facebook_login_text=0x7f010016;
+        public static final int com_facebook_login_text=0x7f01001c;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -131,7 +131,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int com_facebook_logout_text=0x7f010017;
+        public static final int com_facebook_logout_text=0x7f01001d;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -139,7 +139,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int com_facebook_object_id=0x7f010010;
+        public static final int com_facebook_object_id=0x7f010016;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -151,7 +151,7 @@ containing a value of this type.
 <tr><td><code>page</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int com_facebook_object_type=0x7f010011;
+        public static final int com_facebook_object_type=0x7f010017;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -163,7 +163,7 @@ containing a value of this type.
 <tr><td><code>large</code></td><td>-4</td><td></td></tr>
 </table>
          */
-        public static final int com_facebook_preset_size=0x7f010019;
+        public static final int com_facebook_preset_size=0x7f01001f;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -175,7 +175,7 @@ containing a value of this type.
 <tr><td><code>box_count</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int com_facebook_style=0x7f010012;
+        public static final int com_facebook_style=0x7f010018;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -187,7 +187,7 @@ containing a value of this type.
 <tr><td><code>never_display</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int com_facebook_tooltip_mode=0x7f010018;
+        public static final int com_facebook_tooltip_mode=0x7f01001e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -238,6 +238,44 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentPaddingTop=0x7f010009;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int gridInnerColor=0x7f01000c;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int gridInnerStroke=0x7f01000b;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int gridOuterColor=0x7f01000f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int gridOuterStroke=0x7f01000e;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -245,7 +283,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int layoutManager=0x7f01000b;
+        public static final int layoutManager=0x7f010011;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -253,7 +291,41 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int reverseLayout=0x7f01000d;
+        public static final int reverseLayout=0x7f010013;
+        /** <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>off</code></td><td>0</td><td></td></tr>
+<tr><td><code>on</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int setInnerGridMode=0x7f01000d;
+        /** <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>off</code></td><td>0</td><td></td></tr>
+<tr><td><code>on</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int setOuterGridMode=0x7f010010;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -261,7 +333,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int spanCount=0x7f01000c;
+        public static final int spanCount=0x7f010012;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -269,7 +341,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int stackFromEnd=0x7f01000e;
+        public static final int stackFromEnd=0x7f010014;
     }
     public static final class color {
         public static final int cardview_dark_background=0x7f070000;
@@ -361,69 +433,72 @@ containing a value of this type.
         public static final int share_icon=0x7f020028;
     }
     public static final class id {
-        public static final int arrowdown=0x7f09002b;
-        public static final int arrowleft=0x7f090030;
-        public static final int arrowright=0x7f09002e;
-        public static final int arrowup=0x7f09002c;
-        public static final int automatic=0x7f09000d;
-        public static final int bottom=0x7f090007;
-        public static final int box_count=0x7f090004;
-        public static final int button=0x7f090005;
-        public static final int camera=0x7f090015;
-        public static final int center=0x7f09000a;
-        public static final int com_facebook_body_frame=0x7f09001c;
-        public static final int com_facebook_button_xout=0x7f09001e;
-        public static final int com_facebook_fragment_container=0x7f09001a;
-        public static final int com_facebook_login_activity_progress_bar=0x7f09001b;
-        public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f090020;
-        public static final int com_facebook_tooltip_bubble_view_text_body=0x7f09001f;
-        public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f09001d;
-        public static final int delete=0x7f090028;
-        public static final int display_always=0x7f09000e;
-        public static final int facebook=0x7f090017;
-        public static final int facebooklogout=0x7f090037;
-        public static final int frame=0x7f090023;
-        public static final int gallery=0x7f090016;
-        public static final int ho_gallery=0x7f09002f;
-        public static final int icon=0x7f090036;
-        public static final int imageset=0x7f090025;
-        public static final int imageset1=0x7f090026;
-        public static final int imageview=0x7f090034;
-        public static final int img_first=0x7f090038;
-        public static final int imgback=0x7f090024;
-        public static final int inline=0x7f090008;
+        public static final int arrowdown=0x7f09002d;
+        public static final int arrowleft=0x7f090032;
+        public static final int arrowright=0x7f090030;
+        public static final int arrowup=0x7f09002e;
+        public static final int automatic=0x7f09000f;
+        public static final int bottom=0x7f090009;
+        public static final int box_count=0x7f090006;
+        public static final int btn_done=0x7f090034;
+        public static final int button=0x7f090007;
+        public static final int camera=0x7f090017;
+        public static final int center=0x7f09000c;
+        public static final int com_facebook_body_frame=0x7f09001e;
+        public static final int com_facebook_button_xout=0x7f090020;
+        public static final int com_facebook_fragment_container=0x7f09001c;
+        public static final int com_facebook_login_activity_progress_bar=0x7f09001d;
+        public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f090022;
+        public static final int com_facebook_tooltip_bubble_view_text_body=0x7f090021;
+        public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f09001f;
+        public static final int delete=0x7f09002a;
+        public static final int display_always=0x7f090010;
+        public static final int facebook=0x7f090019;
+        public static final int facebooklogout=0x7f09003a;
+        public static final int frame=0x7f090025;
+        public static final int gallery=0x7f090018;
+        public static final int ho_gallery=0x7f090031;
+        public static final int icon=0x7f090039;
+        public static final int imageset=0x7f090027;
+        public static final int imageset1=0x7f090028;
+        public static final int imageview=0x7f090037;
+        public static final int img_first=0x7f09003b;
+        public static final int imgback=0x7f090026;
+        public static final int inline=0x7f09000a;
         public static final int item_touch_helper_previous_elevation=0x7f090000;
-        public static final int large=0x7f090010;
-        public static final int left=0x7f09000b;
-        public static final int linear2=0x7f090014;
-        public static final int list_view=0x7f090031;
-        public static final int llLoginButton=0x7f090032;
-        public static final int llayoutaddbtn=0x7f09002d;
-        public static final int mainlayout=0x7f090013;
-        public static final int messenger_send_button=0x7f090033;
-        public static final int never_display=0x7f09000f;
-        public static final int normal=0x7f090011;
-        public static final int open_graph=0x7f090001;
-        public static final int page=0x7f090002;
-        public static final int photo_gallery=0x7f090018;
-        public static final int recyclerview_select_images=0x7f090029;
-        public static final int recyclerview_show_images=0x7f090039;
-        public static final int relative_layout=0x7f090021;
-        public static final int right=0x7f09000c;
-        public static final int rlbottom=0x7f090019;
-        public static final int save=0x7f09003c;
-        public static final int scrollview=0x7f09002a;
-        public static final int settings=0x7f09003b;
-        public static final int share=0x7f09003d;
-        public static final int showshare=0x7f09003e;
-        public static final int small=0x7f090012;
-        public static final int standard=0x7f090006;
-        public static final int taskbar=0x7f090022;
-        public static final int textview=0x7f090035;
-        public static final int top=0x7f090009;
-        public static final int unknown=0x7f090003;
-        public static final int updownscroll=0x7f090027;
-        public static final int viewimage=0x7f09003a;
+        public static final int large=0x7f090012;
+        public static final int left=0x7f09000d;
+        public static final int linear2=0x7f090016;
+        public static final int list_view=0x7f090033;
+        public static final int llLoginButton=0x7f090035;
+        public static final int llayoutaddbtn=0x7f09002f;
+        public static final int mainlayout=0x7f090015;
+        public static final int messenger_send_button=0x7f090036;
+        public static final int never_display=0x7f090011;
+        public static final int normal=0x7f090013;
+        public static final int off=0x7f090001;
+        public static final int on=0x7f090002;
+        public static final int open_graph=0x7f090003;
+        public static final int page=0x7f090004;
+        public static final int photo_gallery=0x7f09001a;
+        public static final int recyclerview_select_images=0x7f09002b;
+        public static final int recyclerview_show_images=0x7f09003c;
+        public static final int relative_layout=0x7f090023;
+        public static final int right=0x7f09000e;
+        public static final int rlbottom=0x7f09001b;
+        public static final int save=0x7f09003f;
+        public static final int scrollview=0x7f09002c;
+        public static final int settings=0x7f09003e;
+        public static final int share=0x7f090040;
+        public static final int showshare=0x7f090041;
+        public static final int small=0x7f090014;
+        public static final int standard=0x7f090008;
+        public static final int taskbar=0x7f090024;
+        public static final int textview=0x7f090038;
+        public static final int top=0x7f09000b;
+        public static final int unknown=0x7f090005;
+        public static final int updownscroll=0x7f090029;
+        public static final int viewimage=0x7f09003d;
     }
     public static final class layout {
         public static final int activity_facebook=0x7f030000;
@@ -433,22 +508,23 @@ containing a value of this type.
         public static final int com_facebook_tooltip_bubble=0x7f030004;
         public static final int editor=0x7f030005;
         public static final int facebook_photo=0x7f030006;
-        public static final int login=0x7f030007;
-        public static final int messenger_button_send_blue_large=0x7f030008;
-        public static final int messenger_button_send_blue_round=0x7f030009;
-        public static final int messenger_button_send_blue_small=0x7f03000a;
-        public static final int messenger_button_send_white_large=0x7f03000b;
-        public static final int messenger_button_send_white_round=0x7f03000c;
-        public static final int messenger_button_send_white_small=0x7f03000d;
-        public static final int my_adapter=0x7f03000e;
-        public static final int row=0x7f03000f;
-        public static final int settingspage=0x7f030010;
-        public static final int show_image_first=0x7f030011;
-        public static final int show_select_image_first=0x7f030012;
-        public static final int showsavedimage=0x7f030013;
-        public static final int splash=0x7f030014;
-        public static final int table_portrait=0x7f030015;
-        public static final int viewpager=0x7f030016;
+        public static final int image_crop_and_zoomer=0x7f030007;
+        public static final int login=0x7f030008;
+        public static final int messenger_button_send_blue_large=0x7f030009;
+        public static final int messenger_button_send_blue_round=0x7f03000a;
+        public static final int messenger_button_send_blue_small=0x7f03000b;
+        public static final int messenger_button_send_white_large=0x7f03000c;
+        public static final int messenger_button_send_white_round=0x7f03000d;
+        public static final int messenger_button_send_white_small=0x7f03000e;
+        public static final int my_adapter=0x7f03000f;
+        public static final int row=0x7f030010;
+        public static final int settingspage=0x7f030011;
+        public static final int show_image_first=0x7f030012;
+        public static final int show_select_image_first=0x7f030013;
+        public static final int showsavedimage=0x7f030014;
+        public static final int splash=0x7f030015;
+        public static final int table_portrait=0x7f030016;
+        public static final int viewpager=0x7f030017;
     }
     public static final class menu {
         public static final int activity_main=0x7f0a0000;
@@ -465,6 +541,7 @@ containing a value of this type.
         public static final int app_name=0x7f040013;
         public static final int app_setting=0x7f040014;
         public static final int camera_button=0x7f040015;
+        public static final int can_not_crop=0x7f040016;
         public static final int com_facebook_image_download_unknown_error=0x7f040000;
         public static final int com_facebook_internet_permission_error_message=0x7f040001;
         public static final int com_facebook_internet_permission_error_title=0x7f040002;
@@ -481,12 +558,12 @@ containing a value of this type.
         public static final int com_facebook_send_button_text=0x7f04000d;
         public static final int com_facebook_share_button_text=0x7f04000e;
         public static final int com_facebook_tooltip_default=0x7f04000f;
-        public static final int fb_app_id=0x7f040016;
-        public static final int hello_world=0x7f040017;
-        public static final int how_to_share=0x7f040018;
-        public static final int library_button=0x7f040019;
-        public static final int loading=0x7f04001a;
-        public static final int menu_settings=0x7f04001b;
+        public static final int fb_app_id=0x7f040017;
+        public static final int hello_world=0x7f040018;
+        public static final int how_to_share=0x7f040019;
+        public static final int library_button=0x7f04001a;
+        public static final int loading=0x7f04001b;
+        public static final int menu_settings=0x7f04001c;
         public static final int messenger_send_button_text=0x7f040010;
     }
     public static final class style {
@@ -734,6 +811,138 @@ containing a value of this type.
           @attr name com.mystyle:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 9;
+        /** Attributes that can be used with a ImageCropView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ImageCropView_gridInnerColor com.mystyle:gridInnerColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ImageCropView_gridInnerStroke com.mystyle:gridInnerStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #ImageCropView_gridOuterColor com.mystyle:gridOuterColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ImageCropView_gridOuterStroke com.mystyle:gridOuterStroke}</code></td><td></td></tr>
+           <tr><td><code>{@link #ImageCropView_setInnerGridMode com.mystyle:setInnerGridMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ImageCropView_setOuterGridMode com.mystyle:setOuterGridMode}</code></td><td></td></tr>
+           </table>
+           @see #ImageCropView_gridInnerColor
+           @see #ImageCropView_gridInnerStroke
+           @see #ImageCropView_gridOuterColor
+           @see #ImageCropView_gridOuterStroke
+           @see #ImageCropView_setInnerGridMode
+           @see #ImageCropView_setOuterGridMode
+         */
+        public static final int[] ImageCropView = {
+            0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e,
+            0x7f01000f, 0x7f010010
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.mystyle.R.attr#gridInnerColor}
+          attribute's value can be found in the {@link #ImageCropView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.mystyle:gridInnerColor
+        */
+        public static final int ImageCropView_gridInnerColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.mystyle.R.attr#gridInnerStroke}
+          attribute's value can be found in the {@link #ImageCropView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.mystyle:gridInnerStroke
+        */
+        public static final int ImageCropView_gridInnerStroke = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.mystyle.R.attr#gridOuterColor}
+          attribute's value can be found in the {@link #ImageCropView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.mystyle:gridOuterColor
+        */
+        public static final int ImageCropView_gridOuterColor = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.mystyle.R.attr#gridOuterStroke}
+          attribute's value can be found in the {@link #ImageCropView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.mystyle:gridOuterStroke
+        */
+        public static final int ImageCropView_gridOuterStroke = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.mystyle.R.attr#setInnerGridMode}
+          attribute's value can be found in the {@link #ImageCropView} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>off</code></td><td>0</td><td></td></tr>
+<tr><td><code>on</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.mystyle:setInnerGridMode
+        */
+        public static final int ImageCropView_setInnerGridMode = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.mystyle.R.attr#setOuterGridMode}
+          attribute's value can be found in the {@link #ImageCropView} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>off</code></td><td>0</td><td></td></tr>
+<tr><td><code>on</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.mystyle:setOuterGridMode
+        */
+        public static final int ImageCropView_setOuterGridMode = 5;
         /** Attributes that can be used with a RecyclerView.
            <p>Includes the following attributes:</p>
            <table>
@@ -753,8 +962,8 @@ containing a value of this type.
            @see #RecyclerView_stackFromEnd
          */
         public static final int[] RecyclerView = {
-            0x010100c4, 0x7f01000b, 0x7f01000c, 0x7f01000d,
-            0x7f01000e
+            0x010100c4, 0x7f010011, 0x7f010012, 0x7f010013,
+            0x7f010014
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#orientation}
@@ -839,8 +1048,8 @@ containing a value of this type.
            @see #com_facebook_like_view_com_facebook_style
          */
         public static final int[] com_facebook_like_view = {
-            0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012,
-            0x7f010013, 0x7f010014
+            0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018,
+            0x7f010019, 0x7f01001a
         };
         /**
           <p>This symbol is the offset where the {@link com.mystyle.R.attr#com_facebook_auxiliary_view_position}
@@ -960,7 +1169,7 @@ containing a value of this type.
            @see #com_facebook_login_view_com_facebook_tooltip_mode
          */
         public static final int[] com_facebook_login_view = {
-            0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018
+            0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e
         };
         /**
           <p>This symbol is the offset where the {@link com.mystyle.R.attr#com_facebook_confirm_logout}
@@ -1035,7 +1244,7 @@ containing a value of this type.
            @see #com_facebook_profile_picture_view_com_facebook_preset_size
          */
         public static final int[] com_facebook_profile_picture_view = {
-            0x7f010019, 0x7f01001a
+            0x7f01001f, 0x7f010020
         };
         /**
           <p>This symbol is the offset where the {@link com.mystyle.R.attr#com_facebook_is_cropped}

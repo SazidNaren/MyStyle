@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="imagecropview-1.1.0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.naver.android.helloyako/imagecropview/1.1.0/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.naver.android.helloyako/imagecropview/1.1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.naver.android.helloyako/imagecropview/1.1.0/5b9ad0e5e4f87e94c9e7f691f7008d73a80e4a26/imagecropview-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

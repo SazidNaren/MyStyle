@@ -16,12 +16,12 @@
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\com_facebook_button_like_background.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle_button.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\drawable\\circle_button.xml"
-    },
-    {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\drawable\\messenger_button_white_bg_round.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle_button.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\drawable\\circle_button.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\customborder.xml",

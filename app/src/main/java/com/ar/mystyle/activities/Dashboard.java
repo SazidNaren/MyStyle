@@ -54,6 +54,7 @@ public class Dashboard extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+/*
 
 
 		try {
@@ -71,6 +72,7 @@ public class Dashboard extends Activity {
 
 		}
 
+*/
 
 		CreateAdView.getInstance(this);
 		linearl2=(LinearLayout)findViewById(R.id.linear2);

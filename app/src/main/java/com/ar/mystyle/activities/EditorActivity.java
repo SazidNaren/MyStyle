@@ -17,9 +17,12 @@ import com.ar.mystyle.adapters.SelectImageAdapter;
 import com.ar.mystyle.interfaces.ClickListener;
 import com.mystyle.R;
 
+import android.app.Dialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Window;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.ViewSwitcher.ViewFactory;
 import android.app.Activity;
@@ -56,7 +59,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 	private Bitmap bitmap1;
 	private ImageView scrollLeft,scrollRight;
 	private String filePath=null;
-	private Bitmap Capfground,Goggfground,MHeirfground,Lipsfground,Beardfground,WHeirfground;
+	public static Bitmap Capfground,Goggfground,MHeirfground,Lipsfground,Beardfground,WHeirfground;
 	static Bitmap hideback;
 	private Gallery galleryhoriz;
 	static boolean isimagesaved;
@@ -71,13 +74,14 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 	public static boolean isCapDeleted,isLipsDeleted;
 	public static boolean isGoggleDeleted,isManHeirDeleted;
 	public static boolean isWomanHeirDeleted,isBeardDeleted;
-	public static boolean isFirstImage,Iscapselected,isLipsSelected;
+	public static boolean isCapselected,isLipsSelected;
 	public static boolean isGoggleSelected,isManHeirSelected,isSaved;
-	public static boolean isWomanHeirSElected,isBeardSelected;
+	public static boolean isWomanHeirSelected,isBeardSelected;
 	public static ImageView Save1;
 	private ImageIds imgIds;
 	public static boolean bagFlag = false;
 	private RecyclerView recyclerView;
+	private ImageView imgDelete;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -93,6 +97,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 		scrollLeft=(ImageView)findViewById(R.id.arrowleft);
 		scrollRight=(ImageView)findViewById(R.id.arrowright);
 		recyclerView=(RecyclerView)findViewById(R.id.recyclerview_select_images);
+		imgDelete=(ImageView)findViewById(R.id.delete);
 		GridLayoutManager mLayoutManager = new GridLayoutManager(this,4);
 		recyclerView.setLayoutManager(mLayoutManager);
 		dm = new DisplayMetrics();
@@ -181,8 +186,8 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 		frame.addView(canvasview);
 		if (getIntent().hasExtra("data")) {
 			bitmap = (Bitmap) getIntent().getExtras().get("data");
-			isFirstImage=true;
-			canvasview.setBackground(bitmap);
+		//	isFirstImage=true;
+		//	canvasview.setBackground(bitmap);
 		}
 		else if (getIntent().hasExtra("path")) {
 			bitmap = decodeSampledBitmapFromResource(getResources(),
@@ -192,15 +197,45 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				Toast.makeText(getApplicationContext(), "please select an image", Toast.LENGTH_SHORT).show();
 				return;
 			}
-			isFirstImage=true;
-			canvasview.setBackground(bitmap);
+			//isFirstImage=true;
+		//	canvasview.setBackground(bitmap);
 		}
 		else if (getIntent().getExtras().getBoolean("album")) {
-			isFirstImage=true;
-			canvasview.setBackground(bitmap);
+		//	isFirstImage=true;
+		//	canvasview.setBackground(bitmap);
 		}
+		imgDelete.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+			}
+		});
+		openResizableDialog();
 	}
 
+
+	 void openResizableDialog()
+	 {
+		 final Dialog dialog = new Dialog(this);
+		 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		 dialog.setContentView(R.layout.image_crop_and_zoomer);
+		 //dialog.setTitle("");
+		 // set the custom dialog components - text, image and button
+		 ImageView image = (ImageView) dialog.findViewById(R.id.imageset);
+		 image.setImageBitmap(bitmap);
+		 Button dialogButton = (Button) dialog.findViewById(R.id.btn_done);
+		 // if button is clicked, close the custom dialog
+		 dialogButton.setOnClickListener(new OnClickListener() {
+			 @Override
+			 public void onClick(View v) {
+				 dialog.dismiss();
+				 updownscroll1.setBackground(new BitmapDrawable(getResources(),bitmap));
+				 canvasview.setBackground(bitmap);
+			 }
+		 });
+
+		 dialog.show();
+	 }
 
 	void setAllSelectedFalse()
 	{
@@ -211,11 +246,11 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 		isManHeirDeleted=false;
 		isWomanHeirDeleted=false;
 		isBeardSelected=false;
-		Iscapselected=false;
+		isCapselected =false;
 		isLipsSelected=false;
 		isGoggleSelected=false;
 		isManHeirSelected=false;
-		isWomanHeirSElected=false;
+		isWomanHeirSelected =false;
 	}
 	@Override
 	public void onBackPressed() {
@@ -422,7 +457,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				isCapDeleted = false;
 				Capfground =  ((BitmapDrawable)imgIds.getImageIdCaps().get(position)).getBitmap();
 				canvasview.setForeground(Capfground);
-				Iscapselected = true;
+				isCapselected = true;
 				updownscroll1.setVisibility(View.INVISIBLE);
 				canvasview.invalidate();
 				break;
@@ -464,7 +499,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				WHeirfground =  ((BitmapDrawable)(imgIds.getImageIsW_Heir().get(position))).getBitmap();
 				canvasview.setForeground(WHeirfground);
 				canvasview.invalidate();
-				isWomanHeirSElected = true;
+				isWomanHeirSelected = true;
 				updownscroll1.setVisibility(View.INVISIBLE);
 				break;
 		}
