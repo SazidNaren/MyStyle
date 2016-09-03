@@ -4,8 +4,8 @@
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\menu\\savedimagemenu.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\menu\\activity_main.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main_menu.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\menu\\main_menu.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\menu\\editor_menu.xml",

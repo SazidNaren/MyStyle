@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="light_green">#3300ff00</color>
+    <color name="light_green">#eeffee</color>
+    <color name="half_dark_green">#bbffbb</color>
+    <color name="dark_green">#66ff66</color>
+
+    <color name="text_blue">#0000ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#555555</color>
+
     <color name="light_blue">#330000ff</color>
+    <color name="transparent">#00000000</color>
 </resources>

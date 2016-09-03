@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    tools:context="com.ar.mystyle.activities.FacebookAlbumsActivity">
+    <com.ar.mystyle.custom.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="@dimen/heading_text_size"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/text_blue"
+        android:text="Select Facebook Photo"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/dark_green"/>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_photos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -2,12 +2,10 @@ package com.ar.mystyle.Util;
 
 import java.util.HashSet;
 import java.util.Set;
-
-
 import com.google.ads.AdRequest;
 import com.google.ads.AdSize;
 import com.google.ads.AdView;
-import com.mystyle.R;
+import com.style.facechanger.R;
 
 import android.app.Activity;
 import android.widget.LinearLayout;

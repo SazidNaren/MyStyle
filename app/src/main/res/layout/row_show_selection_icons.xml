@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="5dp">
+        <ImageView
+            android:id="@+id/img_first"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            android:src="@android:color/transparent"/>
+    </RelativeLayout>
+</LinearLayout>

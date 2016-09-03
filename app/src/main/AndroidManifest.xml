@@ -1,90 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mystyle"
+    package="com.style.facechanger"
     android:versionCode="1"
-    android:versionName="1.0" >
-
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
 
     <application
         android:name="com.ar.mystyle.Util.App"
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.ar.mystyle.activities.SplashScreen"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+        android:theme="@style/Theme.Transparent">
         <activity
             android:name="com.ar.mystyle.activities.EditorActivity"
             android:configChanges="orientation"
             android:label="@string/app_name"
-            android:parentActivityName="com.ar.mystyle.activities.Dashboard"
-            android:screenOrientation="portrait" >
+            android:parentActivityName="com.ar.mystyle.activities.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="image/*" />
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.ar.mystyle.activities.Canvas"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name="com.ar.mystyle.activities.Settings"
+            android:name="com.ar.mystyle.activities.SettingsActivity"
             android:label="@string/app_setting"
-            android:parentActivityName="com.ar.mystyle.activities.Dashboard"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:parentActivityName="com.ar.mystyle.activities.MainActivity"
+            android:screenOrientation="portrait"></activity>
+
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/fb_app_id" />
+
         <provider
             android:name="com.facebook.FacebookContentProvider"
             android:authorities="com.facebook.app.FacebookContentProvider546054322221354"
             android:exported="true" />
 
         <activity
-            android:name="com.ar.mystyle.activities.ShowSavedImage"
-            android:parentActivityName="com.ar.mystyle.activities.Dashboard"
-            android:screenOrientation="portrait" >
-        </activity>
-
-        <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:label="@string/app_name" />
-
+            android:name="com.ar.mystyle.activities.ShowSavedImageActivity"
+            android:parentActivityName="com.ar.mystyle.activities.MainActivity"
+            android:screenOrientation="portrait"></activity>
         <activity
-            android:name="com.ar.mystyle.activities.Dashboard"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+
+            android:name="com.ar.mystyle.activities.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ar.mystyle.activities.CropActivity"></activity>
         <activity
             android:name="com.google.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity android:name="com.ar.mystyle.activities.FacebookAlbumsActivity"></activity>
+
+        <activity android:name="com.ar.mystyle.activities.FacebookAlbumsActivity"/>
+
+        <activity android:name="com.ar.mystyle.activities.FacebookPhotosActivity"/>
+
+        <activity android:name="com.ar.mystyle.activities.GalleryImages"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

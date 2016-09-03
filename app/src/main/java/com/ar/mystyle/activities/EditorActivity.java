@@ -9,24 +9,30 @@ import java.io.InputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-
 import com.ar.mystyle.Util.CreateAdView;
-import com.ar.mystyle.ImageIds;
-import com.ar.mystyle.adapters.GetImageAdapterHori;
-import com.ar.mystyle.adapters.SelectImageAdapter;
+import com.ar.mystyle.Util.ImageIds;
+import com.ar.mystyle.Util.Utility;
+import com.ar.mystyle.adapters.SelectImageAdapterHori;
+import com.ar.mystyle.adapters.SelectImageAdapterVert;
 import com.ar.mystyle.interfaces.ClickListener;
-import com.mystyle.R;
+import com.naver.android.helloyako.imagecrop.view.ImageCropView;
+import com.style.facechanger.R;
 
 import android.app.Dialog;
+import android.media.MediaScannerConnection;
+import android.os.AsyncTask;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.KeyEvent;
 import android.view.Window;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.ViewSwitcher.ViewFactory;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -53,7 +59,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 @SuppressWarnings("deprecation")
-public class EditorActivity extends Activity implements ViewFactory,ClickListener {
+public class EditorActivity extends Activity implements ViewFactory,ClickListener,OnClickListener {
 	private Bitmap bitmap;
 	static RelativeLayout updownscroll1;
 	private Bitmap bitmap1;
@@ -66,9 +72,8 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 	private FrameLayout frame;
 	private Canvas canvasview;
 	private DisplayMetrics dm;
-	private SelectImageAdapter imageAdapter;
+	private SelectImageAdapterVert imageAdapter;
 	public static int dHeight,dWidth;
-	ImageView Share1;
 
 	static boolean capdelete,googgledelete,manheirdelete,bearddelete,womanheirdelete,lipsdelete;
 	public static boolean isCapDeleted,isLipsDeleted;
@@ -77,23 +82,26 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 	public static boolean isCapselected,isLipsSelected;
 	public static boolean isGoggleSelected,isManHeirSelected,isSaved;
 	public static boolean isWomanHeirSelected,isBeardSelected;
-	public static ImageView Save1;
+	public static ImageView imgSave,imgShare;
 	private ImageIds imgIds;
 	public static boolean bagFlag = false;
 	private RecyclerView recyclerView;
 	private ImageView imgDelete;
+	private Animation showAnim,hideAnim;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.editor);
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		setContentView(R.layout.activity_editor);
+//		getActionBar().setDisplayHomeAsUpEnabled(true);
 		hideback=BitmapFactory.decodeResource(getResources(),R.drawable.hide);
 		galleryhoriz=(Gallery)findViewById(R.id.ho_gallery);
 		frame = (FrameLayout) findViewById(R.id.frame);
 		updownscroll1=(RelativeLayout)findViewById(R.id.updownscroll);
-		Save1 = (ImageView) findViewById(R.id.save);
-		Share1 = (ImageView) findViewById(R.id.share);
+		imgSave= (ImageView) findViewById(R.id.img_save);
+		imgShare = (ImageView) findViewById(R.id.img_share);
+		imgSave.setOnClickListener(this);
+		imgShare.setOnClickListener(this);
 		scrollLeft=(ImageView)findViewById(R.id.arrowleft);
 		scrollRight=(ImageView)findViewById(R.id.arrowright);
 		recyclerView=(RecyclerView)findViewById(R.id.recyclerview_select_images);
@@ -106,7 +114,9 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 		dHeight=dm.heightPixels;
 		dWidth=dm.widthPixels;
 		imgIds=ImageIds.getInstance(this);
-		galleryhoriz.setAdapter(new GetImageAdapterHori(this));
+		showAnim= AnimationUtils.loadAnimation(this,R.anim.bottom_to_top);
+		hideAnim= AnimationUtils.loadAnimation(this,R.anim.top_to_bottom);
+		galleryhoriz.setAdapter(new SelectImageAdapterHori(this));
 		galleryhoriz.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 				recyclerView.setVisibility(View.VISIBLE);
@@ -114,47 +124,53 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				setAllSelectedFalse();
 				switch (position) {
 					case 0:
-						imageAdapter=new SelectImageAdapter(0,imgIds.getImageIdCaps(),EditorActivity.this,EditorActivity.this);
+						imageAdapter=new SelectImageAdapterVert(0,imgIds.getImageIdCaps(),EditorActivity.this,EditorActivity.this);
 						recyclerView.setAdapter(imageAdapter);
 						recyclerView.setVisibility(View.VISIBLE);
 						updownscroll1.setVisibility(View.VISIBLE);
+						updownscroll1.startAnimation(showAnim);
 						isCapDeleted =true;
 						break;
 
 					case 1:
-						imageAdapter=new SelectImageAdapter(1,imgIds.getImageIdGoggles(),EditorActivity.this,EditorActivity.this);
+						imageAdapter=new SelectImageAdapterVert(1,imgIds.getImageIdGoggles(),EditorActivity.this,EditorActivity.this);
 						recyclerView.setAdapter(imageAdapter);
 						recyclerView.setVisibility(View.VISIBLE);
 						updownscroll1.setVisibility(View.VISIBLE);
+						updownscroll1.startAnimation(showAnim);
 						isGoggleDeleted=true;
-					break;
+						break;
 					case 2:
-						imageAdapter=new SelectImageAdapter(2,imgIds.getImageIsHeirs(),EditorActivity.this,EditorActivity.this);
+						imageAdapter=new SelectImageAdapterVert(2,imgIds.getImageIsHeirs(),EditorActivity.this,EditorActivity.this);
 						recyclerView.setAdapter(imageAdapter);
 						recyclerView.setVisibility(View.VISIBLE);
 						updownscroll1.setVisibility(View.VISIBLE);
+						updownscroll1.startAnimation(showAnim);
 						isManHeirDeleted=true;
 						break;
 					case 3:
-						imageAdapter=new SelectImageAdapter(3,imgIds.getImageIsLips(),EditorActivity.this,EditorActivity.this);
-						recyclerView.setAdapter(imageAdapter);
-						recyclerView.setVisibility(View.VISIBLE);
-        				updownscroll1.setVisibility(View.VISIBLE);
-						isLipsDeleted=true;
-						break;
-					case 4:
-						imageAdapter=new SelectImageAdapter(4,imgIds.getImageIsMouths(),EditorActivity.this,EditorActivity.this);
+						imageAdapter=new SelectImageAdapterVert(3,imgIds.getImageIsLips(),EditorActivity.this,EditorActivity.this);
 						recyclerView.setAdapter(imageAdapter);
 						recyclerView.setVisibility(View.VISIBLE);
 						updownscroll1.setVisibility(View.VISIBLE);
+						updownscroll1.startAnimation(showAnim);
+						isLipsDeleted=true;
+						break;
+					case 4:
+						imageAdapter=new SelectImageAdapterVert(4,imgIds.getImageIsMouths(),EditorActivity.this,EditorActivity.this);
+						recyclerView.setAdapter(imageAdapter);
+						recyclerView.setVisibility(View.VISIBLE);
+						updownscroll1.setVisibility(View.VISIBLE);
+						updownscroll1.startAnimation(showAnim);
 						isBeardDeleted=true;
 						break;
 
 					case 5:
-						imageAdapter=new SelectImageAdapter(5,imgIds.getImageIsW_Heir(),EditorActivity.this,EditorActivity.this);
+						imageAdapter=new SelectImageAdapterVert(5,imgIds.getImageIsW_Heir(),EditorActivity.this,EditorActivity.this);
 						recyclerView.setAdapter(imageAdapter);
 						recyclerView.setVisibility(View.VISIBLE);
 						updownscroll1.setVisibility(View.VISIBLE);
+						updownscroll1.startAnimation(showAnim);
 						isWomanHeirDeleted = true;
 						break;
 				}
@@ -186,56 +202,86 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 		frame.addView(canvasview);
 		if (getIntent().hasExtra("data")) {
 			bitmap = (Bitmap) getIntent().getExtras().get("data");
-		//	isFirstImage=true;
-		//	canvasview.setBackground(bitmap);
+			openResizableDialog();
 		}
 		else if (getIntent().hasExtra("path")) {
 			bitmap = decodeSampledBitmapFromResource(getResources(),
 					getIntent().getStringExtra("path"), dWidth/2, dHeight/2);
-			if(!(getIntent().getStringExtra("path").endsWith(".jpg")||getIntent().getStringExtra("path").endsWith(".jpeg")||getIntent().getStringExtra("path").endsWith(".gif")||getIntent().getStringExtra("path").endsWith(".png")))
+			String imgUrl=getIntent().getStringExtra("path");
+			if(!(imgUrl.endsWith(".jpg")||imgUrl.endsWith(".jpeg")||imgUrl.endsWith(".gif")||imgUrl.endsWith(".png")) || bitmap==null)
 			{
-				Toast.makeText(getApplicationContext(), "please select an image", Toast.LENGTH_SHORT).show();
+				Toast.makeText(getApplicationContext(), "Please select an image..", Toast.LENGTH_SHORT).show();
+				super.onBackPressed();
+				overridePendingTransition(0, R.anim.top_to_bottom);
 				return;
 			}
 			//isFirstImage=true;
-		//	canvasview.setBackground(bitmap);
+			//	canvasview.setBackground(bitmap);
+			openResizableDialog();
 		}
-		else if (getIntent().getExtras().getBoolean("album")) {
-		//	isFirstImage=true;
-		//	canvasview.setBackground(bitmap);
+		else if (getIntent().getExtras().containsKey("fbphoto")) {
+			String photoUrl=getIntent().getExtras().getString("fbphoto");
+			//bitmap= Utility.getBitmapFromURL(photoUrl);
+			new MyBitmap(photoUrl).execute();
 		}
 		imgDelete.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-
+				googgledelete=true;
+				canvasview.invalidate();
 			}
 		});
-		openResizableDialog();
 	}
 
 
-	 void openResizableDialog()
-	 {
-		 final Dialog dialog = new Dialog(this);
-		 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-		 dialog.setContentView(R.layout.image_crop_and_zoomer);
-		 //dialog.setTitle("");
-		 // set the custom dialog components - text, image and button
-		 ImageView image = (ImageView) dialog.findViewById(R.id.imageset);
-		 image.setImageBitmap(bitmap);
-		 Button dialogButton = (Button) dialog.findViewById(R.id.btn_done);
-		 // if button is clicked, close the custom dialog
-		 dialogButton.setOnClickListener(new OnClickListener() {
-			 @Override
-			 public void onClick(View v) {
-				 dialog.dismiss();
-				 updownscroll1.setBackground(new BitmapDrawable(getResources(),bitmap));
-				 canvasview.setBackground(bitmap);
-			 }
-		 });
+	void openResizableDialog()
+	{
 
-		 dialog.show();
-	 }
+		final Dialog dialog = new Dialog(this,R.style.DialogTheme);
+		dialog.setCanceledOnTouchOutside(false);
+		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		dialog.setContentView(R.layout.dialog_crop_zoom_image);
+		//dialog.setTitle("");
+		// set the custom dialog components - text, image and button
+		final ImageCropView image = (ImageCropView) dialog.findViewById(R.id.imageset);
+		image.setAspectRatio(12,16);
+		image.setImageBitmap(bitmap);
+		Button btnDone = (Button) dialog.findViewById(R.id.btn_done);
+		Button btnCancel = (Button) dialog.findViewById(R.id.btn_cancel);
+		// if button is clicked, close the custom dialog
+		btnDone.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				dialog.dismiss();
+				bitmap=image.getCroppedImage();
+				canvasview.setBackground(bitmap);
+			}
+		});
+
+		btnCancel.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				dialog.dismiss();
+				finish();
+				overridePendingTransition(0,R.anim.top_to_bottom);
+			}
+		});
+		dialog.setOnKeyListener(new Dialog.OnKeyListener() {
+			@Override
+			public boolean onKey(DialogInterface arg0, int keyCode,
+								 KeyEvent event) {
+				// TODO Auto-generated method stub
+				if (keyCode == KeyEvent.KEYCODE_BACK) {
+					dialog.dismiss();
+					finish();
+					overridePendingTransition(0,R.anim.top_to_bottom);
+				}
+				return true;
+			}
+		});
+
+		dialog.show();
+	}
 
 	void setAllSelectedFalse()
 	{
@@ -255,13 +301,21 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 	@Override
 	public void onBackPressed() {
 		// TODO Auto-generated method stub
-		Canvas.Beardfground=null;
-		Canvas.Capfground=null;
-		Canvas.Goggfground=null;
-		Canvas.Lipsfground=null;
-		Canvas.MHeirfground=null;
-		Canvas.WHeirfground=null;
-		super.onBackPressed();
+		if(updownscroll1.getVisibility()==View.VISIBLE)
+		{
+			updownscroll1.setVisibility(View.INVISIBLE);
+			updownscroll1.startAnimation(hideAnim);
+		}
+		else {
+			Canvas.Beardfground = null;
+			Canvas.Capfground = null;
+			Canvas.Goggfground = null;
+			Canvas.Lipsfground = null;
+			Canvas.MHeirfground = null;
+			Canvas.WHeirfground = null;
+			super.onBackPressed();
+			overridePendingTransition(0, R.anim.top_to_bottom);
+		}
 	}
 
 	@Override
@@ -299,10 +353,12 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 
 			// choose another format if PNG doesn't suit you
 			imageData.compress(CompressFormat.PNG, 100, bos);
-
+			Intent intent =
+					new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+			intent.setData(Uri.fromFile(new File("file://" + Environment.getExternalStorageDirectory())));
+			sendBroadcast(intent);
 			bos.flush();
 			bos.close();
-
 		} catch (FileNotFoundException e) {
 			Log.w("TAG", "Error saving image file: " + e.getMessage());
 			return false;
@@ -390,51 +446,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 
 		switch (item.getItemId()) {
 			case R.id.save:
-				isSaved=true;
-				canvasview.invalidate();
-				canvasview.setBackgroundResource(R.drawable.background);
-				canvasview.setDrawingCacheEnabled(true);
-				canvasview.buildDrawingCache(true);
-				// Dashboard.bitmap2=canvasview.getDrawingCache(true);
-				Bitmap imgData = Bitmap.createBitmap(canvasview
-						.getDrawingCache(true));
-				DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-				Calendar cal = Calendar.getInstance();
-
-				storeImage(imgData, "/"
-						+ cal.getTime().toString().replace(':', '_') + ".png");
-				Toast.makeText(EditorActivity.this, "Image Saved...",
-						Toast.LENGTH_SHORT).show();
-				isSaved=false;
-				isimagesaved=true;
-				new AlertDialog.Builder(this)
-						.setIcon(android.R.drawable.ic_dialog_alert)
-						.setTitle("Photo Booth")
-						.setIcon(R.drawable.icon)
-						.setMessage("Do you want to post image on facebook..")
-						.setPositiveButton("Yes", new DialogInterface.OnClickListener()
-						{
-							@Override
-							public void onClick(DialogInterface dialog, int which) {
-								{
-								}
-							}
-							public void postStatusMessage() {
-								if (checkPermissions()) {
-								} else {
-									requestPermissions();
-								}
-							}
-							public void requestPermissions() {
-							}
-							private boolean checkPermissions() {
-								return false;
-							}
-
-						})
-						.setNegativeButton("No", null)
-						.show();
-
+				saveImageCode();
 				return true;
 
 			case R.id.share:
@@ -459,6 +471,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				canvasview.setForeground(Capfground);
 				isCapselected = true;
 				updownscroll1.setVisibility(View.INVISIBLE);
+				updownscroll1.startAnimation(hideAnim);
 				canvasview.invalidate();
 				break;
 			case 1:
@@ -468,6 +481,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				canvasview.invalidate();
 				isGoggleSelected = true;
 				updownscroll1.setVisibility(View.INVISIBLE);
+				updownscroll1.startAnimation(hideAnim);
 				break;
 			case 2:
 				isManHeirDeleted = false;
@@ -476,15 +490,16 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				canvasview.invalidate();
 				isManHeirSelected = true;
 				updownscroll1.setVisibility(View.INVISIBLE);
+				updownscroll1.startAnimation(hideAnim);
 				break;
-		case 3:
+			case 3:
 				isLipsDeleted = false;
 				Lipsfground = ((BitmapDrawable)imgIds.getImageIsLips().get(position)).getBitmap();
 				canvasview.setForeground(Lipsfground);
 				canvasview.invalidate();
 				isLipsSelected = true;
 				updownscroll1.setVisibility(View.INVISIBLE);
-
+				updownscroll1.startAnimation(hideAnim);
 				break;
 			case 4:
 				isBeardDeleted = false;
@@ -493,6 +508,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				canvasview.invalidate();
 				isBeardSelected = true;
 				updownscroll1.setVisibility(View.INVISIBLE);
+				updownscroll1.startAnimation(hideAnim);
 				break;
 			case 5:
 				isWomanHeirDeleted = false;
@@ -501,6 +517,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				canvasview.invalidate();
 				isWomanHeirSelected = true;
 				updownscroll1.setVisibility(View.INVISIBLE);
+				updownscroll1.startAnimation(hideAnim);
 				break;
 		}
 	}
@@ -526,6 +543,54 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 		startActivity(Intent.createChooser(intent, "Share via"));
 	}
 
+	private void saveImageCode()
+	{
+		isSaved=true;
+		canvasview.invalidate();
+		canvasview.setBackgroundColor(getResources().getColor(R.color.cardview_shadow_start_color));
+		canvasview.setDrawingCacheEnabled(true);
+		canvasview.buildDrawingCache(true);
+		// MainActivity.bitmap2=canvasview.getDrawingCache(true);
+		Bitmap imgData = Bitmap.createBitmap(canvasview
+				.getDrawingCache(true));
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Calendar cal = Calendar.getInstance();
+
+		storeImage(imgData, "/"
+				+ cal.getTime().toString().replace(':', '_') + ".png");
+		Toast.makeText(EditorActivity.this, "Your image Saved...",
+				Toast.LENGTH_SHORT).show();
+		isSaved=false;
+		isimagesaved=true;
+	/*new AlertDialog.Builder(this)
+				.setIcon(android.R.drawable.ic_dialog_alert)
+				.setTitle("Photo Booth")
+				.setIcon(R.drawable.icon)
+				.setMessage("Do you want to post image on facebook..")
+				.setPositiveButton("Yes", new DialogInterface.OnClickListener()
+				{
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						{
+						}
+					}
+					public void postStatusMessage() {
+						if (checkPermissions()) {
+						} else {
+							requestPermissions();
+						}
+					}
+					public void requestPermissions() {
+					}
+					private boolean checkPermissions() {
+						return false;
+					}
+
+				})
+				.setNegativeButton("No", null)
+				.show();
+*/
+	}
 	@Override
 	public View makeView() {
 		ImageView iView = new ImageView(this);
@@ -534,5 +599,38 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 				LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
 		iView.setBackgroundColor(0xFF000000);
 		return iView;
+	}
+
+	@Override
+	public void onClick(View v) {
+		int id=v.getId();
+		switch (id)
+		{
+			case R.id.img_save:
+				saveImageCode();
+				break;
+			case R.id.img_share:
+				shareimagecode();
+				break;
+		}
+	}
+	class MyBitmap extends AsyncTask
+	{
+		String url;
+		public MyBitmap(String url)
+		{
+			this.url=url;
+		}
+		@Override
+		protected Object doInBackground(Object[] params) {
+			bitmap=Utility.getBitmapFromURL(url);
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(Object o) {
+			super.onPostExecute(o);
+			openResizableDialog();
+		}
 	}
 }

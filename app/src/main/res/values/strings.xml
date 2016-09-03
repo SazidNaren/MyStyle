@@ -12,7 +12,7 @@
     <string name="fb_app_id">546054322221354</string>
     <string name="app_id"><!--924960117518870--></string>
     <string name="add_id"><!--ca-app-pub-1539847908526641/2467529214--></string>
-<string name="can_not_crop">Crop is not possible</string>
+    <string name="can_not_crop">Crop is not possible</string>
     <string-array name="listItems">
         <item>    LogOut</item>
         <item>        Upgrade</item>

@@ -14,6 +14,9 @@ import android.util.DisplayMetrics;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.ar.mystyle.Util.Utility;
+import com.sromku.simple.fb.utils.Utils;
+
 @SuppressLint("DrawAllocation")
 public class Canvas extends View {
 
@@ -27,6 +30,7 @@ public class Canvas extends View {
 	float oldDist = 1f;
 	float oldRotation = 0;
 	Matrix matrix = new Matrix();
+	Matrix backgroundMatrix = new Matrix();
 	Matrix matrix1 = new Matrix();
 	Matrix savedMatrix = new Matrix();
 
@@ -74,7 +78,10 @@ public class Canvas extends View {
 
 	public void setBackground(Bitmap background) {
 		this.background = background;
-		gintam = background;
+		gintam=background;
+		rect3.set(0,0,gintam.getWidth(),gintam.getHeight());
+		backgroundMatrix.setRectToRect(rect3, rect2, Matrix.ScaleToFit.FILL);
+		invalidate();
 		flag = false;
 		loop = 1;
 
@@ -89,6 +96,13 @@ public class Canvas extends View {
 		super(context, attrs);
 	}
 
+	float tx, ty, sx, sy;
+	Rect rect = new Rect();
+	float transx, transy, width, height, scaleX, scaleY, skewX, skewY;
+	Matrix myNeo;
+
+	// Matrix newForeGround;
+
 	@Override
 	protected void onDraw(android.graphics.Canvas canvas) {
 		// TODO Auto-generated method stub
@@ -97,6 +111,8 @@ public class Canvas extends View {
 		selectedItemforchange();
 		saveMatrixOfItemas();
 		try {
+				myNeo = new Matrix();
+				canvas.drawBitmap(gintam,backgroundMatrix,null);
 			if (flag ) {
 				canvas.drawBitmap(foreground, matrix, null);
 			}
@@ -293,10 +309,8 @@ public class Canvas extends View {
 
 	private void setFirstImageMatrix() {
 		// TODO Auto-generated method stub
-		Bitmap resizedBitmap = Bitmap.createScaledBitmap(gintam, widthScreen,heightScreen-100, true);
-		gintam=resizedBitmap;
-		rect3.set(0,0,gintam.getWidth(),gintam.getHeight());
-		matrix.setRectToRect(rect3, rect2, Matrix.ScaleToFit.CENTER);
+
+
 		//matrix.set(savedMatrix);
 	}
 	//rememberise

@@ -1,98 +1,238 @@
 [
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\facebook_photo.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\facebook_photo.xml"
-    },
-    {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_adapter.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\my_adapter.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\com_facebook_tooltip_bubble.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\viewpager.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\com_facebook_tooltip_bubble.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_blue_small.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_blue_round.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_crop_zoom_image.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\dialog_crop_zoom_image.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_white_small.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_image_first.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\show_image_first.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_large.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_blue_large.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\login.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\com_facebook_activity_layout.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\settingspage.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\settingspage.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\row.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\splash.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\splash.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\image_crop_and_zoomer.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\image_crop_and_zoomer.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\editor.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\editor.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_albums.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\row_albums.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_fragment.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\com_facebook_login_fragment.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\table_portrait.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\table_portrait.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_show_saved_image.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\activity_show_saved_image.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_editor.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\activity_editor.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_round.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_show_selection_icons.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\row_show_selection_icons.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gallery.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\activity_gallery.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\image_fragment.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\image_fragment.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_facebook_photos.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\activity_facebook_photos.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_facebook_albums.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\activity_facebook_albums.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_fb_photes.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\row_fb_photes.xml"
+    },
+    {
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_white_large.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\showsavedimage.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\showsavedimage.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_facebook.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\activity_facebook.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_saved_image.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\row_saved_image.xml"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\show_select_image_first.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\src\\main\\res\\layout\\show_select_image_first.xml"
-    },
-    {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_round.xml",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.7.0\\res\\layout\\messenger_button_send_white_round.xml"
+        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     }
 ]

@@ -4,11 +4,10 @@ package com.ar.mystyle.Util;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
-
-import com.mystyle.R;
 import com.sromku.simple.fb.Permission;
 import com.sromku.simple.fb.SimpleFacebook;
 import com.sromku.simple.fb.SimpleFacebookConfiguration;
+import com.style.facechanger.R;
 
 public class App extends Application
 {
