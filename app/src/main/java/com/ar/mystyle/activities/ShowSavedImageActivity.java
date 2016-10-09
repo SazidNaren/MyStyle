@@ -11,8 +11,14 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.DisplayMetrics;
 import android.widget.Toast;
+
+import com.ar.mystyle.Util.Constants;
+import com.ar.mystyle.Util.Utility;
 import com.ar.mystyle.adapters.ShowSavedImageAdapter;
 import com.ar.mystyle.interfaces.ClickListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.sromku.simple.fb.SimpleFacebook;
 import com.style.facechanger.R;
 
 public class ShowSavedImageActivity extends Activity implements ClickListener{
@@ -22,6 +28,7 @@ public class ShowSavedImageActivity extends Activity implements ClickListener{
 	private int i,count = 0;
 	private ShowSavedImageAdapter showSavedImage;
 	private RecyclerView recyclerView;
+	private AdView mAdView;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -29,6 +36,7 @@ public class ShowSavedImageActivity extends Activity implements ClickListener{
 		setContentView(R.layout.activity_show_saved_image);
 	//	setScreenActionBar();
 		getImagesList();
+		mAdView = (AdView) findViewById(R.id.adView);
 		showSavedImage=new ShowSavedImageAdapter(images,this,this);
 		recyclerView=(RecyclerView)findViewById(R.id.recyclerview_show_images);
 		GridLayoutManager mLayoutManager = new GridLayoutManager(this, 2); // (Context context, int spanCount)
@@ -38,6 +46,9 @@ public class ShowSavedImageActivity extends Activity implements ClickListener{
 
 		recyclerView.setLayoutManager(mLayoutManager);
 		recyclerView.setAdapter(showSavedImage);
+		AdRequest adRequest = new AdRequest.Builder()
+				.build();
+		mAdView.loadAd(adRequest);
 	}
 
 	@Override
@@ -49,6 +60,9 @@ public class ShowSavedImageActivity extends Activity implements ClickListener{
 	@Override
 	protected void onResume() {
 		super.onResume();
+		if (mAdView != null) {
+			mAdView.resume();
+		}
 		getImagesList();
 		showSavedImage=new ShowSavedImageAdapter(images,this,this);
 		recyclerView.setAdapter(showSavedImage);
@@ -58,7 +72,7 @@ public class ShowSavedImageActivity extends Activity implements ClickListener{
 	private void getImagesList() {
 		images = new ArrayList<>();
 		String iconsStoragePath = Environment.getExternalStorageDirectory()
-				+ "/facechanger/myImages/";
+				+ Constants.imageLocation;
 		File sdIconStorageDir = new File(iconsStoragePath);
 		if (!sdIconStorageDir.exists())
 			sdIconStorageDir.mkdir();
@@ -79,7 +93,7 @@ public class ShowSavedImageActivity extends Activity implements ClickListener{
 		}
 		for (i = 0; i < url.length; i++) {
 			if (url[i].endsWith(".png")) {
-				images.add(Environment.getExternalStorageDirectory() + "/facechanger/myImages/" + url[i]);
+				images.add(Environment.getExternalStorageDirectory() + Constants.imageLocation + url[i]);
 			}
 		}
 	}
@@ -100,5 +114,21 @@ public class ShowSavedImageActivity extends Activity implements ClickListener{
 	@Override
 	public void onLongItemClick(int position) {
 
+	}
+	@Override
+	public void onPause() {
+		if (mAdView != null) {
+			mAdView.pause();
+		}
+		super.onPause();
+	}
+
+
+	@Override
+	public void onDestroy() {
+		if (mAdView != null) {
+			mAdView.destroy();
+		}
+		super.onDestroy();
 	}
 }

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import com.ar.mystyle.Util.CreateAdView;
 import com.style.facechanger.R;
 
 public class SettingsActivity extends Activity{
@@ -29,7 +28,7 @@ public class SettingsActivity extends Activity{
 	@Override
 	protected void onResume() {
 		// TODO Auto-generated method stub
-		CreateAdView.getInstance().setSinglaotonAdview(this);
+		//CreateAdView.getInstance().setSinglaotonAdview(this);
 		super.onResume();
 	}
 

@@ -9,18 +9,23 @@ import java.io.InputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import com.ar.mystyle.Util.CreateAdView;
+
+import com.ar.mystyle.Util.Constants;
 import com.ar.mystyle.Util.ImageIds;
 import com.ar.mystyle.Util.Utility;
 import com.ar.mystyle.adapters.SelectImageAdapterHori;
 import com.ar.mystyle.adapters.SelectImageAdapterVert;
 import com.ar.mystyle.interfaces.ClickListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.naver.android.helloyako.imagecrop.view.ImageCropView;
 import com.style.facechanger.R;
 
 import android.app.Dialog;
+import android.graphics.Matrix;
 import android.media.MediaScannerConnection;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -82,12 +87,14 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 	public static boolean isCapselected,isLipsSelected;
 	public static boolean isGoggleSelected,isManHeirSelected,isSaved;
 	public static boolean isWomanHeirSelected,isBeardSelected;
-	public static ImageView imgSave,imgShare;
+	public static ImageView imgSave;
 	private ImageIds imgIds;
 	public static boolean bagFlag = false;
 	private RecyclerView recyclerView;
 	private ImageView imgDelete;
 	private Animation showAnim,hideAnim;
+	private AdView mAdView;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -99,13 +106,13 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 		frame = (FrameLayout) findViewById(R.id.frame);
 		updownscroll1=(RelativeLayout)findViewById(R.id.updownscroll);
 		imgSave= (ImageView) findViewById(R.id.img_save);
-		imgShare = (ImageView) findViewById(R.id.img_share);
 		imgSave.setOnClickListener(this);
-		imgShare.setOnClickListener(this);
+
 		scrollLeft=(ImageView)findViewById(R.id.arrowleft);
 		scrollRight=(ImageView)findViewById(R.id.arrowright);
 		recyclerView=(RecyclerView)findViewById(R.id.recyclerview_select_images);
 		imgDelete=(ImageView)findViewById(R.id.delete);
+		mAdView = (AdView) findViewById(R.id.adView);
 		GridLayoutManager mLayoutManager = new GridLayoutManager(this,4);
 		recyclerView.setLayoutManager(mLayoutManager);
 		dm = new DisplayMetrics();
@@ -200,6 +207,9 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 		});
 		canvasview = new Canvas(EditorActivity.this);
 		frame.addView(canvasview);
+		AdRequest adRequest = new AdRequest.Builder()
+				.build();
+		mAdView.loadAd(adRequest);
 		if (getIntent().hasExtra("data")) {
 			bitmap = (Bitmap) getIntent().getExtras().get("data");
 			openResizableDialog();
@@ -248,7 +258,18 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 		image.setImageBitmap(bitmap);
 		Button btnDone = (Button) dialog.findViewById(R.id.btn_done);
 		Button btnCancel = (Button) dialog.findViewById(R.id.btn_cancel);
+		ImageView btnRotate=(ImageView) dialog.findViewById(R.id.img_rotate);
 		// if button is clicked, close the custom dialog
+		btnRotate.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Matrix matrix = new Matrix();
+				matrix.postRotate(90);
+				bitmap = Bitmap.createBitmap(bitmap, 0, 0,
+						bitmap.getWidth(), bitmap.getHeight(), matrix, true);
+				image.setImageBitmap(bitmap);
+			}
+		});
 		btnDone.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -320,7 +341,11 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 
 	@Override
 	protected void onResume() {
-		CreateAdView.getInstance().setSinglaotonAdview(this);
+		//CreateAdView.getInstance().setSinglaotonAdview(this);
+		Utility.isNetworkConnected(mAdView,this);
+		if (mAdView != null) {
+			mAdView.resume();
+		}
 		// TODO Auto-generated method stub
 		super.onResume();
 	}
@@ -338,7 +363,7 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 	private boolean storeImage(Bitmap imageData, String filename) {
 		// get path to external storage (SD card)
 		String iconsStoragePath = Environment.getExternalStorageDirectory()
-				+ "/facechanger/myImages/";
+				+ Constants.imageLocation;
 		File sdIconStorageDir = new File(iconsStoragePath);
 
 		// create storage directories, if they don't exist
@@ -353,12 +378,22 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 
 			// choose another format if PNG doesn't suit you
 			imageData.compress(CompressFormat.PNG, 100, bos);
-			Intent intent =
-					new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
-			intent.setData(Uri.fromFile(new File("file://" + Environment.getExternalStorageDirectory())));
-			sendBroadcast(intent);
 			bos.flush();
 			bos.close();
+			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+				Intent mediaScanIntent = new Intent(
+						Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+				File file=new File(filePath);
+				Uri contentUri = Uri.fromFile(file);
+				//out is your output file
+				mediaScanIntent.setData(contentUri);
+				this.sendBroadcast(mediaScanIntent);
+			} else {
+				sendBroadcast(new Intent(
+						Intent.ACTION_MEDIA_MOUNTED,
+						Uri.parse("file://"
+								+ Environment.getExternalStorageDirectory())));
+			}
 		} catch (FileNotFoundException e) {
 			Log.w("TAG", "Error saving image file: " + e.getMessage());
 			return false;
@@ -550,46 +585,15 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 		canvasview.setBackgroundColor(getResources().getColor(R.color.cardview_shadow_start_color));
 		canvasview.setDrawingCacheEnabled(true);
 		canvasview.buildDrawingCache(true);
-		// MainActivity.bitmap2=canvasview.getDrawingCache(true);
 		Bitmap imgData = Bitmap.createBitmap(canvasview
 				.getDrawingCache(true));
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		Calendar cal = Calendar.getInstance();
-
 		storeImage(imgData, "/"
 				+ cal.getTime().toString().replace(':', '_') + ".png");
 		Toast.makeText(EditorActivity.this, "Your image Saved...",
 				Toast.LENGTH_SHORT).show();
 		isSaved=false;
 		isimagesaved=true;
-	/*new AlertDialog.Builder(this)
-				.setIcon(android.R.drawable.ic_dialog_alert)
-				.setTitle("Photo Booth")
-				.setIcon(R.drawable.icon)
-				.setMessage("Do you want to post image on facebook..")
-				.setPositiveButton("Yes", new DialogInterface.OnClickListener()
-				{
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						{
-						}
-					}
-					public void postStatusMessage() {
-						if (checkPermissions()) {
-						} else {
-							requestPermissions();
-						}
-					}
-					public void requestPermissions() {
-					}
-					private boolean checkPermissions() {
-						return false;
-					}
-
-				})
-				.setNegativeButton("No", null)
-				.show();
-*/
 	}
 	@Override
 	public View makeView() {
@@ -632,5 +636,22 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 			super.onPostExecute(o);
 			openResizableDialog();
 		}
+	}
+	@Override
+	public void onPause() {
+		if (mAdView != null) {
+			mAdView.pause();
+		}
+		super.onPause();
+	}
+
+
+
+	@Override
+	public void onDestroy() {
+		if (mAdView != null) {
+			mAdView.destroy();
+		}
+		super.onDestroy();
 	}
 }

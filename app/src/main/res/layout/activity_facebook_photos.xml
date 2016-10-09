@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/main_background"
     tools:context="com.ar.mystyle.activities.FacebookAlbumsActivity">
-    <com.ar.mystyle.custom.MyTextView
+    <com.ar.mystyle.view.MyTextView
+        android:id="@+id/heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:textSize="@dimen/heading_text_size"
         android:gravity="center"
-        android:textStyle="bold"
+        android:background="@color/dark_green"
         android:textColor="@color/text_blue"
         android:text="Select Facebook Photo"/>
     <View
@@ -24,7 +26,18 @@
         android:background="@color/dark_green"/>
 <android.support.v7.widget.RecyclerView
     android:id="@+id/rv_photos"
+    android:layout_below="@+id/heading"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/adView">
 </android.support.v7.widget.RecyclerView>
-</LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="@string/banner_home_footer">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

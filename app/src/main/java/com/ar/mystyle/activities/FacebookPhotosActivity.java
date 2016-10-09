@@ -1,11 +1,14 @@
 package com.ar.mystyle.activities;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+
+import com.ar.mystyle.Util.Utility;
 import com.ar.mystyle.adapters.FbPhotosAdapter;
 import com.ar.mystyle.interfaces.ClickListener;
 import com.ar.mystyle.models.FbAlbum;
@@ -14,11 +17,11 @@ import com.facebook.AccessToken;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.HttpMethod;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.style.facechanger.R;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 
 public class FacebookPhotosActivity extends Activity implements ClickListener{
@@ -26,17 +29,26 @@ public class FacebookPhotosActivity extends Activity implements ClickListener{
     private RecyclerView rvPhotos;
     private FbPhotosAdapter fbPhotosAdapter;
     private FbAlbum fbAlbum;
+    private AdView mAdView;
+    private ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facebook_photos);
         rvPhotos = (RecyclerView) findViewById(R.id.rv_photos);
         fbAlbum = (FbAlbum) getIntent().getSerializableExtra("data");
+        mAdView = (AdView) findViewById(R.id.adView);
         GridLayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         rvPhotos.setLayoutManager(mLayoutManager);
         fbPhotos = new ArrayList<>();
         Bundle bundle=new Bundle();
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+        mAdView.loadAd(adRequest);
         bundle.putString("fields", "id,name,images");
+        progressDialog=new ProgressDialog(this);
+        progressDialog.setMessage("Loading Photos from Album");
+        progressDialog.show();
         new GraphRequest(
                 AccessToken.getCurrentAccessToken(),
                 "/" + fbAlbum.getAlbumId() + "/photos",
@@ -44,6 +56,8 @@ public class FacebookPhotosActivity extends Activity implements ClickListener{
                 HttpMethod.GET,
                 new GraphRequest.Callback() {
                     public void onCompleted(GraphResponse response) {
+                        if(progressDialog.isShowing())
+                            progressDialog.dismiss();
                         fbPhotos=parseData(response);
                         Log.d("photos", "");
                         fbPhotosAdapter=new FbPhotosAdapter(FacebookPhotosActivity.this,FacebookPhotosActivity.this,fbPhotos);
@@ -94,5 +108,30 @@ public class FacebookPhotosActivity extends Activity implements ClickListener{
     @Override
     public void onLongItemClick(int position) {
 
+    }
+    @Override
+    public void onPause() {
+        if (mAdView != null) {
+            mAdView.pause();
+        }
+        super.onPause();
+    }
+    @Override
+    protected void onResume() {
+        // TODO Auto-generated method stub
+        Utility.isNetworkConnected(mAdView,this);
+        if (mAdView != null) {
+            mAdView.resume();
+        }
+        super.onResume();
+    }
+
+
+    @Override
+    public void onDestroy() {
+        if (mAdView != null) {
+            mAdView.destroy();
+        }
+        super.onDestroy();
     }
 }

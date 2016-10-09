@@ -1,11 +1,19 @@
 package com.ar.mystyle.activities;
 
-import com.ar.mystyle.Util.CreateAdView;
+import com.ar.mystyle.Util.Utility;
+import com.ar.mystyle.view.GifView;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.sromku.simple.fb.Permission;
 import com.sromku.simple.fb.SimpleFacebook;
 import com.sromku.simple.fb.listeners.OnLoginListener;
 import com.style.facechanger.R;
 
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -17,6 +25,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.database.Cursor;
 import android.support.v7.app.AlertDialog;
+import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,32 +33,37 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 public class MainActivity extends Activity {
 
-	LinearLayout camera_btn;
-	LinearLayout photo_gallerybtn,facebookBtn,gallerybtn;
-	Editor editor;
-	SharedPreferences sharedpreferences,recievepreference;
+	private LinearLayout camera_btn;
+	private LinearLayout photo_gallerybtn,facebookBtn,gallerybtn;
+	private Editor editor;
+	private SharedPreferences sharedpreferences,recievepreference;
 	static final int REQUEST_TAKE_PHOTO = 1;
 //	public static ImageView mImageView;
-	LinearLayout linearl2;
-	SimpleFacebook simpleFacebook;
-	public static final String MyPREFERENCES = "MyPrefs" ;
+	private LinearLayout linearl2;
+	private SimpleFacebook simpleFacebook;
+	private final String MyPREFERENCES = "MyPrefs" ;
 	private static final int SELECT_PICTURE = 2;
-	Intent photo;
+	private Intent photo;
+	private AdView mAdView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-/*
+		FacebookSdk.sdkInitialize(getApplicationContext());
+		AppEventsLogger.activateApp(this);
 
 
 		try {
 			PackageInfo info = getPackageManager().getPackageInfo(
-					"com.mystyle",
+					getPackageName(),
 					PackageManager.GET_SIGNATURES);
 			for (Signature signature : info.signatures) {
 				MessageDigest md = MessageDigest.getInstance("SHA");
@@ -62,20 +76,22 @@ public class MainActivity extends Activity {
 
 		}
 
-*/
 
-		CreateAdView.getInstance(this);
+		//CreateAdView.getInstance(this);
 		linearl2=(LinearLayout)findViewById(R.id.linear2);
 		sharedpreferences = PreferenceManager
 				.getDefaultSharedPreferences(MainActivity.this);
 		editor = sharedpreferences.edit();
 		recievepreference = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
-
+		mAdView = (AdView) findViewById(R.id.adView);
 		camera_btn = (LinearLayout) findViewById(R.id.ll_camera);
 		photo_gallerybtn = (LinearLayout) findViewById(R.id.ll_photo_gallery);
 		facebookBtn = (LinearLayout) findViewById(R.id.ll_facebook);
 		gallerybtn=(LinearLayout)findViewById(R.id.ll_gallery);
+//		gifview=(GifView)findViewById(R.id.gifview);
 		//mImageView = (ImageView) findViewById(R.id.image);
+
+
 		photo_gallerybtn.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -91,7 +107,10 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
-				OnLoginListener onLoginListener = new OnLoginListener() {
+				if(!Utility.isNetworkConnected(mAdView,MainActivity.this)) {
+					Toast.makeText(MainActivity.this,"Internet Not Connected",Toast.LENGTH_SHORT).show();
+					return;
+				}OnLoginListener onLoginListener = new OnLoginListener() {
 
 					@Override
 					public void onLogin(String accessToken, List<Permission> acceptedPermissions, List<Permission> declinedPermissions) {
@@ -150,7 +169,9 @@ public class MainActivity extends Activity {
 				startActivityForResult(intent, SELECT_PICTURE);
 			}
 		});
-
+		AdRequest adRequest = new AdRequest.Builder()
+				.build();
+		mAdView.loadAd(adRequest);
 	}
 
 	@Override
@@ -196,7 +217,7 @@ public class MainActivity extends Activity {
 		// TODO Auto-generated method stub
 
 		new AlertDialog.Builder(this)
-		.setIcon(android.R.drawable.ic_dialog_alert)
+		.setIcon(R.mipmap.ic_launcher)
 		.setTitle("PhotoBooth")
 	//	.setIcon(R.drawable.icon)
 		.setMessage("Are you sure you want to exit this application?")
@@ -220,13 +241,6 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main_menu, menu);
 		return super.onCreateOptionsMenu(menu);
 	}
-	@Override
-	protected void onResume() {
-		// TODO Auto-generated method stub
-		CreateAdView.getInstance().setSinglaotonAdview(this);
-		simpleFacebook=SimpleFacebook.getInstance(MainActivity.this);
-		super.onResume();
-	}
 	@Override  
 	public boolean onOptionsItemSelected(MenuItem item) {  
 		switch (item.getItemId()) {  
@@ -238,11 +252,31 @@ public class MainActivity extends Activity {
 		default:  
 			return super.onOptionsItemSelected(item);  
 		}  
-	}  
+	}
 	@Override
-	protected void onDestroy() {
-
+	public void onPause() {
+		if (mAdView != null) {
+			mAdView.pause();
+		}
+		super.onPause();
+	}
+	@Override
+	protected void onResume() {
 		// TODO Auto-generated method stub
+		Utility.isNetworkConnected(mAdView,this);
+		simpleFacebook=SimpleFacebook.getInstance(MainActivity.this);
+		if (mAdView != null) {
+			mAdView.resume();
+		}
+		super.onResume();
+	}
+
+
+	@Override
+	public void onDestroy() {
+		if (mAdView != null) {
+			mAdView.destroy();
+		}
 		super.onDestroy();
 	}
 }

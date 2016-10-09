@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ar.mystyle.custom.TouchImageView;
+import com.ar.mystyle.view.TouchImageView;
 import com.style.facechanger.R;
 
 /**

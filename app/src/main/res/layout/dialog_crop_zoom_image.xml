@@ -25,21 +25,30 @@
             android:layout_height="0dp"
             android:orientation="horizontal"
             android:layout_weight="1">
-            <com.ar.mystyle.custom.MyButton
+            <ImageView
+                android:id="@+id/img_rotate"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:background="@drawable/btn_back"
+                android:src="@drawable/rotate"/>
+            <com.ar.mystyle.view.MyButton
                 android:id="@+id/btn_done"
                 android:layout_width="0dp"
-                android:layout_weight="2"
+                android:layout_weight="20"
                 android:layout_height="match_parent"
                 android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
                 android:layout_marginRight="8dp"
                 android:background="@drawable/btn_back"
                 android:textColor="@color/text_blue"
                 android:textSize="20sp"
                 android:text="Done"/>
-            <com.ar.mystyle.custom.MyButton
+            <com.ar.mystyle.view.MyButton
                 android:id="@+id/btn_cancel"
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="10"
                 android:layout_height="match_parent"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="8dp"
