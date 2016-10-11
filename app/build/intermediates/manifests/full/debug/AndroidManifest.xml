@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.style.facechanger"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="15"
@@ -13,12 +13,11 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
-
     <application
         android:name="com.ar.mystyle.Util.App"
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.Transparent" >
         <activity
@@ -49,6 +48,9 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/fb_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <provider
             android:name="com.facebook.FacebookContentProvider"
@@ -56,7 +58,7 @@
             android:exported="true" />
 
         <activity
-            android:name="com.ar.mystyle.activities.ShowSavedImageActivity"
+            android:name="com.ar.mystyle.activities.MyCollectionActivity"
             android:parentActivityName="com.ar.mystyle.activities.MainActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -74,15 +76,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.google.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
         <activity android:name="com.ar.mystyle.activities.FacebookAlbumsActivity" />
         <activity android:name="com.ar.mystyle.activities.FacebookAlbumsActivity" />
         <activity android:name="com.ar.mystyle.activities.FacebookPhotosActivity" />
         <activity
             android:name="com.ar.mystyle.activities.GalleryImages"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
     </application>
 
 </manifest>

@@ -26,6 +26,7 @@ import android.graphics.Matrix;
 import android.media.MediaScannerConnection;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -233,6 +234,17 @@ public class EditorActivity extends Activity implements ViewFactory,ClickListene
 			String photoUrl=getIntent().getExtras().getString("fbphoto");
 			//bitmap= Utility.getBitmapFromURL(photoUrl);
 			new MyBitmap(photoUrl).execute();
+		}
+		else if(getIntent().getExtras().containsKey(Intent.EXTRA_STREAM))
+		{
+			Uri imageUri =(Uri) getIntent().getExtras().get(Intent.EXTRA_STREAM);
+			try {
+				bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
+				openResizableDialog();
+			} catch (IOException e) {
+				e.printStackTrace();
+				finish();
+			}
 		}
 		imgDelete.setOnClickListener(new OnClickListener() {
 			@Override

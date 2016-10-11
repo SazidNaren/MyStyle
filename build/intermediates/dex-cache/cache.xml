@@ -1,3 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\SAZID ALI\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\1.7.2\112366d8158749e25532ebce162232c6e0fb20a5\gson-1.7.2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="112366d8158749e25532ebce162232c6e0fb20a5">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\gson-1.7.2_05e3f165127ff90d97f7da20dfa211eb2173095c.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.0.1_74ba04ddeb3055ed6ce93c27dc42ca47ad69336d.jar" />
+    </item>
+    <item
+        jar="C:\Users\SAZID ALI\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\bolts-android-1.2.0_658371685ab802b6ac93966776589a6d7d163d19.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.0.0_3ec5ea9f8728eaa3951d7785c42cd28dec36665a.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_8a24d3bfba8a1e51149406af1d10f504d31eeccc.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-8.4.0_de46cd99fd12375a03698a30ab47004759bffb4d.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_c15b0affe086fab34581e027d0e25f42619a5b44.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\com.naver.android.helloyako\imagecropview\1.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="383c6d33efeff1d4e4f6c698c51a2153ac2b0e01">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\com.naver.android.helloyako-imagecropview-1.1.0_509946477024d5ff8c6bed4cc2f6d27245f5b763.jar" />
+    </item>
+    <item
+        jar="C:\Users\SAZID ALI\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.3.2\d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27\picasso-2.3.2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\picasso-2.3.2_5f8e5ef7e5426b79cfbf738893e5f4e5c2b62d23.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="40e7757d9b06db670062ddb3cf5b30c129b2fd8c">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.0.0_3b050ac3df0ee69c751d8955aaf13bfd095c5b08.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_8f048d40f3956e1e7a2816e6af5d6b28e3a71f08.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.7.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5bdb38b7e4b6094891648c1dc4dc08589b460f97">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.7.0_12b89c651398d9f9b05219eada2275fca528acbd.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="35120eb4c19aa401f250d93683104d4033658827">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\instant-run_0ec6cd2b67f214721fae3b590790eba93c47e64d.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\it.sephiroth.android.library.easing\android-easing\1.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="90c8cd98f8c1cd37285d7bf9ea5a9ec6df3a99b6">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\it.sephiroth.android.library.easing-android-easing-1.0.3_c3677637dd095317888f5d4b7320034c2a656c7d.jar" />
+    </item>
+    <item
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_6ededcc9b39f46fbcdd6efbd1a4d51bb6afd2a15.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_a2c726d7b2acf42cd6f55abc071131887dab4b23.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="74cf780f0bc2b59b4497d8e18c1e40c1f13f6d70">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_8c16478e4a8f525a23cf819b8b71c64f48fe99a7.jar" />
+    </item>
+    <item
+        jar="S:\Android_Studio_Apps\WalletGit\MyStyle\app\libs\pinchzoom.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a4def992b1f41525748db059dfdd21322cc3157e">
+        <dex dex="S:\Android_Studio_Apps\WalletGit\MyStyle\app\build\intermediates\pre-dexed\debug\pinchzoom_241b6970025074861a51bf5cd1d0dc3c58462a9d.jar" />
+    </item>
+
+</items>

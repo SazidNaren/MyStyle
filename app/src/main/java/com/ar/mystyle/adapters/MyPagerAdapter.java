@@ -3,10 +3,9 @@ package com.ar.mystyle.adapters;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.ar.mystyle.ImageFragment;
+import com.ar.mystyle.fragment.ImageFragment;
 import java.util.ArrayList;
 
 public class MyPagerAdapter extends FragmentStatePagerAdapter {

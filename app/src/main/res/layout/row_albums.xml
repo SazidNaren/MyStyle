@@ -21,14 +21,14 @@
             android:background="@drawable/album_back"/>
         <com.ar.mystyle.view.MyTextView
             android:id="@+id/album_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:padding="10dp"
             android:textSize="22sp"
             android:gravity="center"
-            android:background="@color/half_transparent"
-            android:textColor="@color/text_blue"
+            android:background="#55000000"
+            android:textColor="@color/white"
             android:text="Profile"/>
         <TextView
             android:id="@+id/album_count"

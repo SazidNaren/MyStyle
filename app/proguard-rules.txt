@@ -12,7 +12,9 @@
 # If your project uses WebView with JS, uncomment the following
 # and specify the fully qualified class name to the JavaScript interface
 # class:
-#-keep com.squareup.picasso:picasso.**
+-dontwarn com.squareup.picasso.OkHttpDownloader**
+-dontwarn com.imagezoom.VersionGestureDetector**
 #-keep public class android.content.** { *; }
 #   public *;
+
 

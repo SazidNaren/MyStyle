@@ -1,7 +1,6 @@
 package com.ar.mystyle.activities;
 
 import com.ar.mystyle.Util.Utility;
-import com.ar.mystyle.view.GifView;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 import com.google.android.gms.ads.AdRequest;
@@ -11,10 +10,11 @@ import com.sromku.simple.fb.SimpleFacebook;
 import com.sromku.simple.fb.listeners.OnLoginListener;
 import com.style.facechanger.R;
 
-import android.content.pm.PackageInfo;
+import android.Manifest;
 import android.content.pm.PackageManager;
-import android.content.pm.Signature;
+import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
@@ -24,8 +24,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.database.Cursor;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
-import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,11 +35,9 @@ import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener {
 
 	private LinearLayout camera_btn;
 	private LinearLayout photo_gallerybtn,facebookBtn,gallerybtn;
@@ -59,25 +58,6 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		FacebookSdk.sdkInitialize(getApplicationContext());
 		AppEventsLogger.activateApp(this);
-
-
-		try {
-			PackageInfo info = getPackageManager().getPackageInfo(
-					getPackageName(),
-					PackageManager.GET_SIGNATURES);
-			for (Signature signature : info.signatures) {
-				MessageDigest md = MessageDigest.getInstance("SHA");
-				md.update(signature.toByteArray());
-				Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
-			}
-		} catch (PackageManager.NameNotFoundException e) {
-
-		} catch (NoSuchAlgorithmException e) {
-
-		}
-
-
-		//CreateAdView.getInstance(this);
 		linearl2=(LinearLayout)findViewById(R.id.linear2);
 		sharedpreferences = PreferenceManager
 				.getDefaultSharedPreferences(MainActivity.this);
@@ -85,93 +65,28 @@ public class MainActivity extends Activity {
 		recievepreference = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
 		mAdView = (AdView) findViewById(R.id.adView);
 		camera_btn = (LinearLayout) findViewById(R.id.ll_camera);
-		photo_gallerybtn = (LinearLayout) findViewById(R.id.ll_photo_gallery);
+		photo_gallerybtn = (LinearLayout) findViewById(R.id.ll_my_collection);
 		facebookBtn = (LinearLayout) findViewById(R.id.ll_facebook);
 		gallerybtn=(LinearLayout)findViewById(R.id.ll_gallery);
-//		gifview=(GifView)findViewById(R.id.gifview);
-		//mImageView = (ImageView) findViewById(R.id.image);
-
-
-		photo_gallerybtn.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				Intent intent=new Intent(MainActivity.this,ShowSavedImageActivity.class);
-				startActivity(intent);
-				overridePendingTransition(R.anim.bottom_to_top, 0);
-			}
-		});
-		facebookBtn.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-
-				if(!Utility.isNetworkConnected(mAdView,MainActivity.this)) {
-					Toast.makeText(MainActivity.this,"Internet Not Connected",Toast.LENGTH_SHORT).show();
-					return;
-				}OnLoginListener onLoginListener = new OnLoginListener() {
-
-					@Override
-					public void onLogin(String accessToken, List<Permission> acceptedPermissions, List<Permission> declinedPermissions) {
-						// change the state of the button or do whatever you want
-						Log.i("MyStyle", "Logged in");
-						startActivity(new Intent(MainActivity.this,FacebookAlbumsActivity.class));
-						overridePendingTransition(R.anim.bottom_to_top, 0);
-					}
-
-					@Override
-					public void onCancel() {
-						// user canceled the dialog
-						Log.i("MyStyle", "Logged in");
-					}
-
-					@Override
-					public void onFail(String reason) {
-						// failed to login
-						Log.i("MyStyle", "Logged in");
-					}
-
-					@Override
-					public void onException(Throwable throwable) {
-						// exception from facebook
-
-						Log.i("MyStyle", "Logged in");
-					}
-
-				};
-				simpleFacebook.login(onLoginListener);
-
-			}
-		});
-		camera_btn.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent(
-						android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-
-				startActivityForResult(intent, REQUEST_TAKE_PHOTO);
-				// }
-
-			}
-		});
-		gallerybtn.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-			//	if (Build.VERSION.SDK_INT <19){
-				Intent  intent = new Intent(
-						Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-				intent.setType("image/*");
-				startActivityForResult(intent, SELECT_PICTURE);
-			}
-		});
+		camera_btn.setOnClickListener(this);
+		photo_gallerybtn.setOnClickListener(this);
+		facebookBtn.setOnClickListener(this);
+		gallerybtn.setOnClickListener(this);
 		AdRequest adRequest = new AdRequest.Builder()
 				.build();
 		mAdView.loadAd(adRequest);
+		checkPermissionInMarshMallow();
+	}
+
+	private void checkPermissionInMarshMallow() {
+		if (Build.VERSION.SDK_INT >= 23) {
+			if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+
+			}
+			else {
+				ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1002);
+			}
+		}
 	}
 
 	@Override
@@ -217,7 +132,7 @@ public class MainActivity extends Activity {
 		// TODO Auto-generated method stub
 
 		new AlertDialog.Builder(this)
-		.setIcon(R.mipmap.ic_launcher)
+		.setIcon(R.mipmap.ic_launcher		)
 		.setTitle("PhotoBooth")
 	//	.setIcon(R.drawable.icon)
 		.setMessage("Are you sure you want to exit this application?")
@@ -278,5 +193,77 @@ public class MainActivity extends Activity {
 			mAdView.destroy();
 		}
 		super.onDestroy();
+	}
+
+	@Override
+	public void onClick(View v) {
+
+		int id=v.getId();
+		switch (id) {
+			case R.id.ll_gallery:
+				Intent  intent_photp_gallery = new Intent(
+						Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+				intent_photp_gallery.setType("image/*");
+				startActivityForResult(intent_photp_gallery, SELECT_PICTURE);
+				break;
+
+			case R.id.ll_facebook:
+				getFacebookLogin();
+				break;
+
+			case R.id.ll_camera:
+				Intent intent2 = new Intent(
+						android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+
+				startActivityForResult(intent2, REQUEST_TAKE_PHOTO);
+				break;
+
+			case R.id.ll_my_collection:
+				Intent intent = new Intent(MainActivity.this, MyCollectionActivity.class);
+				startActivity(intent);
+				overridePendingTransition(R.anim.bottom_to_top, 0);
+				break;
+		}
+	}
+
+	private void getFacebookLogin()
+	{
+		if(!Utility.isNetworkConnected(mAdView,MainActivity.this)) {
+			Snackbar snackbar = Snackbar
+					.make(findViewById(R.id.mainlayout), "Internet Connection not available.", Snackbar.LENGTH_LONG);
+			snackbar.setActionTextColor(Color.RED);
+			snackbar.show();
+			return;
+		}OnLoginListener onLoginListener = new OnLoginListener() {
+
+		@Override
+		public void onLogin(String accessToken, List<Permission> acceptedPermissions, List<Permission> declinedPermissions) {
+			// change the state of the button or do whatever you want
+			Log.i("MyStyle", "Logged in");
+			startActivity(new Intent(MainActivity.this,FacebookAlbumsActivity.class));
+			overridePendingTransition(R.anim.bottom_to_top, 0);
+		}
+
+		@Override
+		public void onCancel() {
+			// user canceled the dialog
+			Log.i("MyStyle", "Logged in");
+		}
+
+		@Override
+		public void onFail(String reason) {
+			// failed to login
+			Log.i("MyStyle", "Logged in");
+		}
+
+		@Override
+		public void onException(Throwable throwable) {
+			// exception from facebook
+
+			Log.i("MyStyle", "Logged in");
+		}
+
+	};
+		simpleFacebook.login(onLoginListener);
 	}
 }

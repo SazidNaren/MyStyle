@@ -196,10 +196,6 @@
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_save_black.png",
-        "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_save_black.png"
-    },
-    {
         "merged": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
         "source": "S:\\Android_Studio_Apps\\WalletGit\\MyStyle\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_radio_to_on_mtrl_015.png"
     },

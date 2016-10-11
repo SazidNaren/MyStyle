@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.style.facechanger"
-    android:versionCode="1"
-    android:versionName="1.0">
+    android:versionCode="2"
+    android:versionName="1.1">
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -12,9 +12,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
-    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
     <application
         android:name="com.ar.mystyle.Util.App"
         android:allowBackup="true"
@@ -57,7 +54,7 @@
             android:exported="true" />
 
         <activity
-            android:name="com.ar.mystyle.activities.ShowSavedImageActivity"
+            android:name="com.ar.mystyle.activities.MyCollectionActivity"
             android:parentActivityName="com.ar.mystyle.activities.MainActivity"
             android:screenOrientation="portrait"></activity>
         <activity
